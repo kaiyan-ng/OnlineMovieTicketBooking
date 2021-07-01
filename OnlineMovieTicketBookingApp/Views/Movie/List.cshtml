@@ -1,0 +1,273 @@
+﻿@model IEnumerable<OnlineMovieTicketBookingApp.Models.Movie>
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+
+<style>
+    /*body{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+        }*/
+    /* html, body {
+             height: 100%;
+             width: 100%;
+             padding: 0;
+             margin: 0;
+         }*/
+    .posters {
+        width: 100px;
+        height: auto;
+    }
+
+    .backgrounds {
+        width: 150px;
+        height: auto;
+    }
+
+    .container {
+        position: relative;
+        left: 100px;
+        top: 10px;
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+        font-size: 11px;
+    }
+
+    th {
+        text-align: center;
+        max-width: 100%;
+        overflow-x: hidden;
+        width: 250px;
+    }
+
+    td {
+        height: 200px;
+        overflow: hidden
+    }
+
+    video {
+        width: 200px;
+        height: auto;
+        text-align: center;
+    }
+
+    .col-cast {
+        width: 80px;
+    }
+
+    .col-id {
+        width: 40px;
+    }
+
+    .col-status {
+        width: 60px;
+    }
+
+    .col-title {
+        width: 70px;
+    }
+
+    .col-genre {
+        width: 60px;
+    }
+
+    .col-lang {
+        width: 70px;
+    }
+
+    .col-rating {
+        width: 60px;
+    }
+
+    .col-time {
+        width: 50px;
+    }
+
+    .col-release {
+        width: 60px;
+    }
+
+    .col-dir {
+        width: 60px;
+    }
+
+    .col-distributor {
+        width: 70px;
+    }
+
+    .col-synopsis {
+        width: 250px;
+    }
+
+    .col-poster {
+        text-align: center;
+        width: 180px;
+    }
+
+    .col-trailer {
+        text-align: center;
+        width: 230px;
+    }
+
+    .col-bg {
+        text-align: center;
+        width: 230px;
+    }
+
+    .edit {
+        width: 100px;
+    }
+</style>
+
+<div class="container">
+    <h2> Manage Movies </h2>
+    <p class="create-link">
+        <a asp-controller="Movie" asp-action="Create">Add Movie</a>
+    </p>
+
+    <div class="table-responsive-lg">
+        <table class="table table-sm table-hover">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col" class="col-id">
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>
+                    <th scope="col" class="col-status">
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th scope="col" class="col-title">
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th scope="col" class="col-poster">
+                        Poster
+                    </th>
+                    <th scope="col" class="col-genre">
+                        @Html.DisplayNameFor(model => model.Genre)
+                    </th>
+                    <th scope="col" class="col-lang">
+                        @Html.DisplayNameFor(model => model.Language)
+                    </th>
+                    <th scope="col" class="col-rating">
+                        @Html.DisplayNameFor(model => model.Age_Rating)
+                    </th>
+                    <th scope="col" class="col-time">
+                        Run Time
+                    </th>
+                    <th scope="col" class="col-release">
+                        @Html.DisplayNameFor(model => model.Release_Date)
+                    </th>
+
+                    <th scope="col" class="col-cast">
+                        @Html.DisplayNameFor(model => model.Cast)
+                    </th>
+                    <th scope="col" class="col-dir">
+                        @Html.DisplayNameFor(model => model.Director)
+                    </th>
+                    <th scope="col" class="col-distributor">
+                        @Html.DisplayNameFor(model => model.Distributor)
+                    </th>
+                    <th scope="col" class="col-synopsis">
+                        @Html.DisplayNameFor(model => model.Synopsis)
+                    </th>
+                    <th scope="col" class="col-trailer">
+                        Trailer
+                    </th>
+                    <th scope="col" class="col-bg">
+                        Background Image
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td scope="row" class="col-id">
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td scope="row" class="col-status">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td scope="row" class="col-title">
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td scope="row" class="col-poster">
+                            <img src="@(item.Poster)" class="posters" />
+                            <br />
+                            <i>
+                                File name:
+                                @Html.DisplayFor(modelItem => item.Poster)
+                            </i>
+                        </td>
+                        <td scope="row" class="col-genre">
+                            @Html.DisplayFor(modelItem => item.Genre)
+                        </td>
+                        <td scope="row" class="col-lang">
+                            @Html.DisplayFor(modelItem => item.Language)
+                        </td>
+                        <td scope="row" class="col-rating">
+                            @Html.DisplayFor(modelItem => item.Age_Rating)
+                        </td>
+                        <td scope="row" class="col-time">
+                            @Html.DisplayFor(modelItem => item.Run_Time) minutes
+                        </td>
+                        <td scope="row" class="col-release">
+                            @Convert.ToString(string.Format("{0:dd/MM/yyyy}", item.Release_Date))
+                        </td>
+
+                        <td scope="row" class="col-cast">
+                            @Html.DisplayFor(modelItem => item.Cast)
+                        </td>
+                        <td scope="row" class="col-dir">
+                            @Html.DisplayFor(modelItem => item.Director)
+                        </td>
+                        <td scope="row" class="col-distributor">
+                            @Html.DisplayFor(modelItem => item.Distributor)
+                        </td>
+                        <td scope="row" class="col-synopsis">
+                            @Html.DisplayFor(modelItem => item.Synopsis)
+                        </td>
+                        <td scope="row" class="col-trailer">
+                            <video controls>
+                                <source src="@(item.Trailer)" type="video/mp4">
+                            </video>
+                            <br />
+                            <i>
+                                File name:
+                                @Html.DisplayFor(modelItem => item.Trailer)
+                            </i>
+                        </td>
+                        <td scope="row" class="col-bg">
+                            <img src="@(item.BgImage)" class="backgrounds" />
+                            <br />
+                            <i>
+                                File name:
+                                @Html.DisplayFor(modelItem => item.BgImage)
+                            </i>
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "Movie", new { id = item.Id }) |
+                            @Html.ActionLink("Delete", "Delete", "Movie", new { id = item.Id })
+                            @*<a href='@Url.Action("Edit", "Movie", new { id = item.Id })'>
+                                    <input type="button" class="btn btn-info" value="Edit" />
+                                </a>
+                                <a href='@Url.Action("Delete", "Movie", new { id = item.Id })'>
+                                    <input type="button" class="btn btn-danger" value="Delete" />
+                                </a>*@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

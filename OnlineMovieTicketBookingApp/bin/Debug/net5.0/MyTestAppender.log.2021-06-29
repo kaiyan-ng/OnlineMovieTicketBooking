@@ -1,0 +1,502 @@
+﻿2021-06-29 13:09:31,139 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:09:31,271 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:09:31,274 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 13:09:41,956 ERROR [4] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Admin,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method119(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-29 13:12:34,961 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:12:35,037 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:12:35,039 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 13:26:12,157 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:26:12,240 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:26:12,243 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 13:34:58,628 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:34:58,707 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:34:58,711 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 13:37:24,510 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:37:24,952 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:37:24,957 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 13:38:27,912 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:38:27,978 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:38:27,981 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 13:39:31,002 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:39:31,126 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:39:31,129 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 13:41:55,681 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 13:41:55,757 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 13:41:55,760 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 14:00:22,512 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 14:00:22,729 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 14:00:22,738 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 14:09:19,371 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 14:09:19,568 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 14:09:19,575 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 14:10:11,301 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 14:10:11,482 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 14:10:11,485 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 14:11:28,389 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 14:11:28,669 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 14:11:28,674 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 17:01:36,688 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 17:01:36,832 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 17:01:36,845 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 18:25:32,918 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 18:25:33,163 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 18:25:33,169 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:39:10,530 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:39:10,679 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:39:10,682 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:41:47,528 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:41:47,602 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:41:47,605 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:49:20,323 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:49:20,423 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:49:20,428 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:50:45,550 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:50:45,615 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:50:45,618 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:52:33,567 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:52:33,640 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:52:33,642 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:52:55,341 ERROR [8] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_AdminLayout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-29 22:55:24,003 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:55:24,065 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:55:24,067 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:55:31,427 ERROR [8] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_AdminLayout.cshtml': 'Scripts'. To ignore an unrendered section call IgnoreSection("sectionName").
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-29 22:57:32,066 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:57:32,129 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:57:32,132 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 22:59:49,410 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 22:59:49,486 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 22:59:49,489 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:00:00,496 ERROR [13] ?.? - Failed executing DbCommand (81ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Movies] ([Age_Rating], [BgImage], [Cast], [Director], [Distributor], [Genre], [Language], [Poster], [Release_Date], [Run_Time], [Status], [Synopsis], [Title], [Trailer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [Movies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-06-29 23:00:00,538 ERROR [13] ?.? - An exception occurred in the database while saving changes for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:094dac53-c29c-496a-a34e-01813a3a3b89
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:094dac53-c29c-496a-a34e-01813a3a3b89
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-06-29 23:00:00,673 ERROR [13] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - Could not add the movie29/6/2021 11:00:00 pm
+2021-06-29 23:00:00,676 ERROR [13] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - The details An error occurred while updating the entries. See the inner exception for details.
+2021-06-29 23:00:04,092 ERROR [4] ?.? - Failed executing DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Movies] ([Age_Rating], [BgImage], [Cast], [Director], [Distributor], [Genre], [Language], [Poster], [Release_Date], [Run_Time], [Status], [Synopsis], [Title], [Trailer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [Movies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-06-29 23:00:04,103 ERROR [4] ?.? - An exception occurred in the database while saving changes for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:094dac53-c29c-496a-a34e-01813a3a3b89
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:094dac53-c29c-496a-a34e-01813a3a3b89
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-06-29 23:00:04,147 ERROR [4] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - Could not add the movie29/6/2021 11:00:04 pm
+2021-06-29 23:00:04,151 ERROR [4] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - The details An error occurred while updating the entries. See the inner exception for details.
+2021-06-29 23:05:37,411 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:05:37,488 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:05:37,491 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:08:29,101 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:08:29,179 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:08:29,182 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:08:51,492 ERROR [11] ?.? - Failed executing DbCommand (22ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Movies] ([Age_Rating], [BgImage], [Cast], [Director], [Distributor], [Genre], [Language], [Poster], [Release_Date], [Run_Time], [Status], [Synopsis], [Title], [Trailer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [Movies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-06-29 23:08:51,521 ERROR [11] ?.? - An exception occurred in the database while saving changes for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:516f4e76-0f94-491b-8393-b0ee5342c9e7
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:516f4e76-0f94-491b-8393-b0ee5342c9e7
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-06-29 23:08:51,598 ERROR [11] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - Could not add the movie29/6/2021 11:08:51 pm
+2021-06-29 23:08:51,601 ERROR [11] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - The details An error occurred while updating the entries. See the inner exception for details.
+2021-06-29 23:12:22,017 ERROR [16] ?.? - Failed executing DbCommand (12ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Movies] ([Age_Rating], [BgImage], [Cast], [Director], [Distributor], [Genre], [Language], [Poster], [Release_Date], [Run_Time], [Status], [Synopsis], [Title], [Trailer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [Movies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-06-29 23:12:22,058 ERROR [16] ?.? - An exception occurred in the database while saving changes for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'BgImage', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:516f4e76-0f94-491b-8393-b0ee5342c9e7
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'BgImage', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:516f4e76-0f94-491b-8393-b0ee5342c9e7
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-06-29 23:12:22,198 ERROR [16] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - Could not add the movie29/6/2021 11:12:22 pm
+2021-06-29 23:12:22,274 ERROR [16] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - The details An error occurred while updating the entries. See the inner exception for details.
+2021-06-29 23:16:38,583 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:16:38,671 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:16:38,674 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:16:49,376 ERROR [8] ?.? - Failed executing DbCommand (23ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Movies] ([Age_Rating], [BgImage], [Cast], [Director], [Distributor], [Genre], [Language], [Poster], [Release_Date], [Run_Time], [Status], [Synopsis], [Title], [Trailer])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+SELECT [Id]
+FROM [Movies]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2021-06-29 23:16:49,428 ERROR [8] ?.? - An exception occurred in the database while saving changes for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:8a15b1e6-bd24-46f9-b0e4-9a243d547858
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Age_Rating', table 'dbCinema.dbo.Movies'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:8a15b1e6-bd24-46f9-b0e4-9a243d547858
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-06-29 23:16:49,507 ERROR [8] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - Could not add the movie29/6/2021 11:16:49 pm
+2021-06-29 23:16:49,510 ERROR [8] OnlineMovieTicketBookingApp.Services.MovieRepo.Add - The details An error occurred while updating the entries. See the inner exception for details.
+2021-06-29 23:26:18,299 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:26:18,429 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:26:18,435 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:35:46,224 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:35:46,527 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:35:46,534 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:37:58,599 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:37:58,717 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:37:58,725 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:39:48,727 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:39:48,832 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:39:48,835 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:43:37,551 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:43:37,745 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:43:37,751 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:46:05,671 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:46:05,936 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:46:05,942 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-06-29 23:51:10,446 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 23:51:10,815 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-06-29 23:51:10,825 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp

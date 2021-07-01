@@ -1,0 +1,107 @@
+﻿@model OnlineMovieTicketBookingApp.Models.Movie
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+
+    <style>
+    body{
+        background-image:url(@Model.BgImage);
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    video{
+        width:40%;
+        height: auto;
+        position: relative;
+        left:50px;
+        top: 100px;
+
+    }
+        .watch {
+            top: 100px;
+            position: relative;
+            text-align: center;
+            width: 600px;
+            color:darkgrey;
+        }
+        .details {
+            color: white;
+            left: 50px;
+            top: 110px;
+            position: relative;
+            text-align: left;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 600px;
+        }
+        .label {
+            color:darkgrey;
+        }
+        /*.section{
+            position:relative;
+            left:100px;
+        }*/
+    </style>
+
+    <section>
+
+
+        <div class="watch">
+            <h4>Watch the trailer</h4>
+        </div>
+
+        <video src=@(Model.Trailer) controls> </video>
+
+        <div class="details">
+            <h5>Movie Details</h5>
+            <table>
+                <tr>
+                    <td class="label">Genre: </td>
+                    <td>@Html.DisplayFor(model => model.Genre)</td>
+                    <td> </td>
+                    <td class="label">Cast:        </td>
+                    <td>@Html.DisplayFor(model => model.Cast)</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="label">Rating: </td>
+                    <td>@Html.DisplayFor(model => model.Age_Rating)</td>
+                    <td> </td>
+                    <td class="label">Director:     </td>
+                    <td>@Html.DisplayFor(model => model.Director)</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="label">Language: </td>
+                    <td>@Html.DisplayFor(model => model.Language)</td>
+                    <td> </td>
+                    <td class="label">Distributor:    </td>
+                    <td>@Html.DisplayFor(model => model.Distributor)</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="label">Release: </td>
+                    <td>@Convert.ToString(string.Format("{0:dd/MM/yyyy}", Model.Release_Date))@*@Html.DisplayFor(model => model.Release_Date)*@</td>
+                    <td> </td>
+                    <td class="label">Runtime: </td>
+                    <td>@Html.DisplayFor(model => model.Run_Time) minutes</td>
+                </tr>
+            </table>
+            <br />
+            <h5>Synopsis</h5>
+            <p>
+                @Html.DisplayFor(model => model.Synopsis)
+            </p>
+            <button onclick="location.href='@Url.Action("Index", "Movie")'" class="btn btn-primary">Return to Movies</button>
+
+        </div>
+
+    </section>

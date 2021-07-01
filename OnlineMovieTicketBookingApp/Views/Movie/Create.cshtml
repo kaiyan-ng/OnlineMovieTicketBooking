@@ -1,0 +1,135 @@
+﻿@model OnlineMovieTicketBookingApp.Models.Movie
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<style>
+    .container {
+        position: relative;
+        left: 100px;
+        top: 10px;
+    }
+</style>
+
+<div class="container">
+    <h4>Add New Movie</h4>
+    <hr />
+    <div>
+        @ViewBag.Message
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            @using (Html.BeginForm("Create", "Movie", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.DisplayNameFor(m => m.Title)
+                @Html.EditorFor(m => m.Title, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Genre)
+                @Html.EditorFor(m => m.Genre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Genre, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Language)
+                @Html.EditorFor(m => m.Language, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Language, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Age_Rating)
+                @Html.EditorFor(m => m.Age_Rating, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Age_Rating, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Run_Time)
+                @Html.EditorFor(m => m.Run_Time, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Run_Time, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Release_Date)
+                @Html.TextBoxFor(m => m.Release_Date, "", new { @class = "form-control", @type = "date" })
+                @Html.ValidationMessageFor(m => m.Release_Date, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Status)
+                @Html.EditorFor(m => m.Status, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Status, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Cast)
+                @Html.TextAreaFor(model => model.Cast, new { @class = "form-control", @cols = 80, @rows = 2 })
+                @Html.ValidationMessageFor(m => m.Cast, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Director)
+                @Html.EditorFor(m => m.Director, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Director, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Distributor)
+                @Html.EditorFor(m => m.Distributor, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Distributor, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Synopsis)
+                @Html.TextAreaFor(model => model.Synopsis, new { @class = "form-control", @cols = 80, @rows = 10 })
+                @Html.ValidationMessageFor(m => m.Synopsis, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Poster)
+                @Html.EditorFor(m => m.Poster, new { htmlAttributes = new { @class = "form-control", @placeholder = "/MoviePosters/filename.filetype" } })
+                @Html.ValidationMessageFor(m => m.Poster, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Poster_File)
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    </div>
+                    <small id="fileHelpInline" class="text-muted">
+                        (Only image files such as .jpg or .png are accepted)
+                    </small>
+                </div>
+                @Html.ValidationMessageFor(m => m.Poster_File, "", new { @class = "text-danger" })
+
+                @Html.DisplayNameFor(m => m.Trailer)
+                @Html.EditorFor(m => m.Trailer, new { htmlAttributes = new { @class = "form-control", @placeholder = "/MovieTrailers/filename.filetype" } })
+                @Html.ValidationMessageFor(m => m.Trailer, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Trailer_File)
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    </div>
+                    <small id="fileHelpInline" class="text-muted">
+                        (Only video files such as .mp4 or .ogg are accepted)
+                    </small>
+                </div>
+
+                @Html.ValidationMessageFor(m => m.Trailer_File, "", new { @class = "text-danger" })
+
+                @Html.DisplayNameFor(m => m.BgImage)
+                @Html.EditorFor(m => m.BgImage, new { htmlAttributes = new { @class = "form-control", @placeholder = "/MovieBackgrounds/filename.filetype" } })
+                @Html.ValidationMessageFor(m => m.BgImage, "", new { @class = "text-danger" })
+                <br />
+                @Html.DisplayNameFor(m => m.Bg_File)
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                        @ViewBag.Message
+                    </div>
+                    <small id="fileHelpInline" class="text-muted">
+                        (Only image files such as .jpg or .png are accepted)
+                    </small>
+                </div>
+                @Html.ValidationMessageFor(m => m.Bg_File, "", new { @class = "text-danger" })
+                <br />
+
+                <div class="form-group">
+                    <input type="submit" value="Add Movie" class="btn btn-outline-dark" /> |
+                    <a asp-controller="Movie" asp-action="List">Back to List</a>
+                    <br />
+                </div>
+
+            }
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

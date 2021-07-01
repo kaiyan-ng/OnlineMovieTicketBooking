@@ -1,0 +1,112 @@
+﻿@model OnlineMovieTicketBookingApp.Models.Movie
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<style>
+    .container {
+        position: relative;
+        left: 100px;
+        top: 10px;
+    }
+</style>
+
+<div class="container">
+    <h4>Edit Movie</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            @using (Html.BeginForm("Edit", "Movie", FormMethod.Post))
+            {
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    @*<span asp-validation-for="Title" class="text-danger"></span>*@
+                    @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Genre" class="control-label"></label>
+                    <input asp-for="Genre" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Genre, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Language" class="control-label"></label>
+                    <input asp-for="Language" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Language, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Age_Rating" class="control-label"></label>
+                    <input asp-for="Age_Rating" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Age_Rating, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Run_Time" class="control-label"></label>
+                    <input asp-for="Run_Time" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Run_Time, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Release_Date" class="control-label"></label>
+                    <input asp-for="Release_Date" class="form-control" type="date" />
+                    @Html.ValidationMessageFor(m => m.Release_Date, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status" class="control-label"></label>
+                    <input asp-for="Status" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Status, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cast" class="control-label"></label>
+                    <textarea asp-for="Cast" class="form-control" cols=100 rows=2> </textarea>
+                    @Html.ValidationMessageFor(m => m.Cast, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Director" class="control-label"></label>
+                    <input asp-for="Director" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Director, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Distributor" class="control-label"></label>
+                    <input asp-for="Distributor" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Distributor, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Synopsis" class="control-label"></label>
+                    @*<input asp-for="Synopsis" class="form-control" />*@
+                    <textarea asp-for="Synopsis" class="form-control" cols=100 rows=10> </textarea>
+                    @Html.ValidationMessageFor(m => m.Synopsis, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Poster" class="control-label"></label>
+                    <input asp-for="Poster" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Poster, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="Trailer" class="control-label"></label>
+                    <input asp-for="Trailer" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.Trailer, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label asp-for="BgImage" class="control-label"></label>
+                    <input asp-for="BgImage" class="form-control" />
+                    @Html.ValidationMessageFor(m => m.BgImage, "", new { @class = "text-danger" })
+                    <br />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save Changes" class="btn btn-outline-primary" /> |
+                    <a asp-controller="Movie" asp-action="List">Back to List</a>
+                    <br />
+                </div>
+            }
+            </div>
+    </div>
+
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,139 @@
+﻿@model OnlineMovieTicketBookingApp.Models.CustomerViewModel
+@using OnlineMovieTicketBookingApp.Models
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+    <style>
+        @*form{
+            width:1000px;
+        }*@
+        body {
+            /*color: white;*/
+            /*background-color: #252526;*/
+        }
+        .heading {
+            text-align: center;
+            position:relative;
+            top: 50px;
+        }
+        section{
+            left:425px;
+            position:relative;
+            top:80px;
+            
+        }
+        .age-restrict{
+            color:red;
+            font-size:13px;
+            text-align:center;
+            position:absolute;
+            top:200px;
+            left:500px;
+        }
+        
+    </style>
+
+
+    <div class="heading">
+        <h4>Registration</h4>
+        <p>
+            Please provide the following information to register.
+            <br />
+            You have to be at least 12 years of age to be eligible for registration.
+            <br />
+        </p>
+    </div>
+<div class="age-restrict">@ViewBag.Message</div>
+    
+    
+    <section>
+        @using (Html.BeginForm("Register", "User", FormMethod.Post))
+        {
+            <form>
+                <div class="form-group col-md-4">
+                    <label for="inputUsername">Username</label>
+                    @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                    <br/>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword">Password</label>
+                        @Html.PasswordFor(m => m.UserPassword, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.UserPassword, "", new { @class = "text-danger" })
+                        <br />
+                    </div>
+                    </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPassword2">Confirm Password</label>
+                    @Html.PasswordFor(m => m.Confirm_Password, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Confirm_Password, "", new { @class = "text-danger" })
+                    <br />
+                </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputFirstName">First Name</label>
+                            @Html.EditorFor(m => m.First_Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(m => m.First_Name, "", new { @class = "text-danger" })
+                        </div>
+                        <br />
+                        <div class="form-group col-md-4">
+                            <label for="inputLastName">Last Name</label>
+                            @Html.EditorFor(m => m.Last_Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(m => m.Last_Name, "", new { @class = "text-danger" })
+                        </div>
+                        <br />
+                        <div class="form-group col-md-4">
+                            @Html.DisplayNameFor(m => m.Gender)
+                            @Html.EditorFor(m=>m.Gender, new {htmlAttributes = new {@class = "form-control"}})
+                        </div>
+                        <br />
+                        <div class="form-group col-md-4">
+                            <label for="inputDOB">Date of Birth</label>
+                            @Html.TextBoxFor(model => model.Date_Of_Birth, new { @class = "form-control", @type = "date" })
+                            @Html.ValidationMessageFor(m => m.Date_Of_Birth, "", new { @class = "text-danger" })
+                            <br />
+                        </div>
+
+
+                        <div class="form-group col-md-4">
+                            <label for="inputPhone">Phone no.</label>
+                            @Html.EditorFor(m => m.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+                        </div>
+                        <br />
+                        <div class="form-group col-md-4">
+                            <label for="inputEmail">Email</label>
+                            @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                        <br />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress">Address</label>
+                        <br />
+                        @Html.TextAreaFor(model => model.Address, new { @class = "form-control", @cols = 80, @rows = 5 })
+                        <br />
+                    </div>
+                <div>
+                    <p>
+                        <button type="submit" class="btn btn-light">Register</button>
+                        <a href='@Url.Action("Index", "Home")'>
+                            <input type="button" class="btn btn-secondary" value="Cancel" />
+                            </a>
+
+                    </p>
+                </div>
+                 
+</form>
+
+        }
+    </section>
+<br/>
+<br/>

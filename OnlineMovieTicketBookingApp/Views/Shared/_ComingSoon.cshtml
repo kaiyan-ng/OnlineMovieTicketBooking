@@ -1,0 +1,31 @@
+﻿@model IEnumerable<OnlineMovieTicketBookingApp.Models.Movie>
+
+
+
+@foreach (var item in Model)
+{
+    @if (item.Status == "Coming Soon")
+    {
+        <div class="card" style="width: 18rem;">
+            <div>
+                <a href='@Url.Action("Details", "Movie", new { id = item.Id })'>
+                    <img src=@(item.Poster) class="card-img-top" />
+                </a>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title"><b>@item.Title</b></h5>
+                <h6 class="card-text"><i>(@item.Age_Rating)</i></h6>
+                <p class="card-text">
+                    @item.Genre
+                    <br />
+                    @item.Language
+                    <br />
+                    @item.Run_Time minutes
+                </p>
+                <button class="btn btn-warning">Buy Tickets</button>
+            </div>
+        </div>
+
+    }
+}

@@ -1,0 +1,59 @@
+﻿@model OnlineMovieTicketBookingApp.Models.Show
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<style>
+    .container {
+        position: relative;
+        left: 100px;
+        top: 10px;
+    }
+
+    .message {
+        color: red;
+    }
+</style>
+
+<div class="container">
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Show</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                Show Date & Time
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Date_And_Time)
+            </dd>
+            <dt class="col-sm-2">
+                Movie Id
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Movie.Id)
+            </dd>
+            <dt class="col-sm-2">
+               Hall Id
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Hall.Id) 
+                <br />
+            </dd>
+           
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-outline-danger" /> |
+            <a asp-controller="Show" asp-action="Index">Back to List</a>
+            <br /><br />
+        </form>
+    </div>
+    <p class="message">@ViewBag.Message</p>
+    <br />
+</div>
