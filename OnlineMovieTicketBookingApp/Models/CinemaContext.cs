@@ -18,7 +18,8 @@ namespace OnlineMovieTicketBookingApp.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Admin> Admins { get; set; }
-        
+
+        public DbSet<Ticket> Tickets { get; set; }
         public DbSet<Hall> Halls { get; set; }
 
 
@@ -33,7 +34,7 @@ namespace OnlineMovieTicketBookingApp.Models
                     Last_Name = "Doe",
                     Gender = "Female",
                     Address = "123 Bishan Street 13 Singapore 570123",
-                    Date_Of_Birth = new DateTime(1990-10-10),
+                    Date_Of_Birth = new DateTime(1990,10,10),
                     Phone = "91234567",
                     Email = "janedoe@email.com",
                     Username = "janedoe",

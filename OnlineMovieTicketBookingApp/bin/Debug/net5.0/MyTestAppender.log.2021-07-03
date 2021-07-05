@@ -1,0 +1,188 @@
+﻿2021-07-03 00:56:09,151 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 00:56:09,308 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 00:56:09,313 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 02:01:59,397 ERROR [12] ?.? - An error occurred using the connection to database 'KaiYanSQLServer' on server 'tcp:kaiyandbserver.database.windows.net,1433'.
+2021-07-03 02:01:59,475 ERROR [12] ?.? - An exception occurred while iterating over the results of a query for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=712; handshake=2202; [Login] initialization=11; authentication=17; [Post-Login] complete=27741; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:31006b27-303a-4bfc-9409-72bfd9835a3e
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=712; handshake=2202; [Login] initialization=11; authentication=17; [Post-Login] complete=27741; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:31006b27-303a-4bfc-9409-72bfd9835a3e
+Error Number:-2,State:0,Class:11
+2021-07-03 02:02:28,230 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 02:02:28,899 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 02:02:28,902 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:22:44,088 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:22:44,242 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:22:44,245 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:23:12,328 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:23:12,395 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:23:12,398 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:27:48,680 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:27:48,747 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:27:48,750 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:37:58,112 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:37:58,184 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:37:58,186 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:42:59,294 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:42:59,365 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:42:59,368 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:46:13,323 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:46:13,403 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:46:13,405 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:46:46,592 ERROR [13] ?.? - An error occurred using the connection to database 'KaiYanSQLServer' on server 'tcp:kaiyandbserver.database.windows.net,1433'.
+2021-07-03 16:46:46,630 ERROR [13] ?.? - An exception occurred while iterating over the results of a query for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=713; handshake=1888; [Login] initialization=11; authentication=15; [Post-Login] complete=27920; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6ca53563-ad00-4950-84c1-cd386886aa3d
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=713; handshake=1888; [Login] initialization=11; authentication=15; [Post-Login] complete=27920; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6ca53563-ad00-4950-84c1-cd386886aa3d
+Error Number:-2,State:0,Class:11
+2021-07-03 16:47:00,112 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:47:00,202 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:47:00,205 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:55:24,530 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:55:24,595 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:55:24,597 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:56:20,559 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:56:20,621 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:56:20,624 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:58:22,369 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:58:22,440 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:58:22,444 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 16:59:03,352 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 16:59:03,416 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 16:59:03,419 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:01:24,006 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:01:24,079 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:01:24,083 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:06:34,731 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:06:34,849 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:06:34,851 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:09:03,354 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:09:03,458 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:09:03,461 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:11:19,513 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:11:19,584 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:11:19,587 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:11:50,177 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:11:50,245 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:11:50,247 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:12:11,454 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:12:11,540 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:12:11,543 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:13:49,220 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:13:49,337 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:13:49,339 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:14:53,567 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:14:53,637 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:14:53,640 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:15:28,213 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:15:28,290 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:15:28,292 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:15:53,137 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:15:53,202 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:15:53,206 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:16:25,026 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:16:25,089 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:16:25,092 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:20:54,928 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:20:54,994 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:20:54,997 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:21:36,930 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:21:36,992 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:21:36,995 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:26:50,213 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:26:50,281 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:26:50,284 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:32:25,901 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:32:25,980 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:32:25,983 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:35:24,122 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:35:24,185 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:35:24,188 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:40:25,394 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:40:25,463 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:40:25,465 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:41:48,307 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:41:48,370 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:41:48,372 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-03 17:43:28,852 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-03 17:43:28,916 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-03 17:43:28,918 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp

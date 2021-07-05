@@ -67,7 +67,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         {
                             Id = 1,
                             Address = "123 Bishan Street 13 Singapore 570123",
-                            Date_Of_Birth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(1970),
+                            Date_Of_Birth = new DateTime(1990, 10, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "janedoe@email.com",
                             First_Name = "Jane",
                             Gender = "Female",
@@ -76,34 +76,6 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Phone = "91234567",
                             Username = "janedoe"
                         });
-                });
-
-            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Booking", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("Date_And_Time")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Show_Id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Ticket_Id")
-                        .HasColumnType("int");
-
-                    b.Property<float>("Total_Amount")
-                        .HasColumnType("real");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Show_Id");
-
-                    b.HasIndex("Ticket_Id");
-
-                    b.ToTable("Bookings");
                 });
 
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Customer", b =>
@@ -495,28 +467,40 @@ namespace OnlineMovieTicketBookingApp.Migrations
 
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Ticket", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ticket_id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Hall_Id")
+                    b.Property<int>("customer_id")
                         .HasColumnType("int");
 
-                    b.Property<float>("Price")
-                        .HasColumnType("real");
-
-                    b.Property<int>("Seat_No")
+                    b.Property<int>("hall_id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Show_Id")
+                    b.Property<int>("hall_number")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.Property<int>("seat_id")
+                        .HasColumnType("int");
 
-                    b.HasIndex("Hall_Id");
+                    b.Property<int>("seat_number")
+                        .HasColumnType("int");
 
-                    b.HasIndex("Show_Id");
+                    b.Property<DateTime>("show_datetime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("show_id")
+                        .HasColumnType("int");
+
+                    b.Property<double>("ticket_price")
+                        .HasColumnType("float");
+
+                    b.HasKey("ticket_id");
+
+                    b.HasIndex("customer_id");
+
+                    b.HasIndex("show_id");
 
                     b.ToTable("Tickets");
                 });
@@ -535,25 +519,6 @@ namespace OnlineMovieTicketBookingApp.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Booking", b =>
-                {
-                    b.HasOne("OnlineMovieTicketBookingApp.Models.Show", "Show")
-                        .WithMany()
-                        .HasForeignKey("Show_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("OnlineMovieTicketBookingApp.Models.Ticket", "Ticket")
-                        .WithMany()
-                        .HasForeignKey("Ticket_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Show");
-
-                    b.Navigation("Ticket");
-                });
-
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Show", b =>
                 {
                     b.HasOne("OnlineMovieTicketBookingApp.Models.Hall", "Hall")
@@ -563,7 +528,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         .IsRequired();
 
                     b.HasOne("OnlineMovieTicketBookingApp.Models.Movie", "Movie")
-                        .WithMany("Shows")
+                        .WithMany()
                         .HasForeignKey("Movie_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -575,26 +540,21 @@ namespace OnlineMovieTicketBookingApp.Migrations
 
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Ticket", b =>
                 {
-                    b.HasOne("OnlineMovieTicketBookingApp.Models.Hall", "Hall")
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Customer", "customer")
                         .WithMany()
-                        .HasForeignKey("Hall_Id")
+                        .HasForeignKey("customer_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnlineMovieTicketBookingApp.Models.Show", "Show")
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Show", "show")
                         .WithMany()
-                        .HasForeignKey("Show_Id")
+                        .HasForeignKey("show_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Hall");
+                    b.Navigation("customer");
 
-                    b.Navigation("Show");
-                });
-
-            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Movie", b =>
-                {
-                    b.Navigation("Shows");
+                    b.Navigation("show");
                 });
 #pragma warning restore 612, 618
         }

@@ -164,3 +164,8 @@ C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBooking
 C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Show\Create.cshtml.g.cs
 C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Show\Edit.cshtml.g.cs
 C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Show\Delete.cshtml.g.cs
+C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\User\Edit.cshtml.g.cs
+C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Ticket\Details.cshtml.g.cs
+C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Ticket\Index.cshtml.g.cs
+C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Shared\_Ticket.cshtml.g.cs

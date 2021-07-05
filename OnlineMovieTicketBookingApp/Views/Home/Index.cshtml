@@ -1,5 +1,4 @@
 ﻿
-
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -12,23 +11,62 @@
     .jumbotron {
         background-image: url("../MiscImages/MovieReelBanner.jpg");
         background-size: cover;
-        height:400px;
+        height:600px;
+    }
+    .display-movies{
+        height:500px;
+        overflow: hidden;
+    }
+    .card {
+        @*position: relative;
+        *@
+        /*left: 30px;*/
+        top: 20px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        margin: 5px;
+    }
+
+    .card-img-top {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 13px;
+    }
+
+    .card-text {
+        font-size: 11px;
+    }
+    .now-showing{
+        position: relative;
+        left:50px;
+        font-size:30px;
     }
 </style>
+
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <br/><br /><br />
+        <br /><br /><br />
         <h1 class="display-4">Welcome to Scene-nigma!</h1>
         <p class="lead">Life is an enigma. Navigate through yours with every scene.</p>
         <p>Begin your journey with Scene-nigma...</p>
         <p class="lead">
             <a class="btn btn-outline-warning btn-lg" href="#" role="button">Book Tickets Now</a>
         </p>
-        <br/><br />
+        <br /><br />
     </div>
 </div>
-<h3 class="display-4">Now Showing</h3>
 
-<div>
+<section class="display-movies">
+    <h3 class="now-showing">Movies</h3>
 
-</div>
+    <div>
+        @await Html.PartialAsync("_NowShowing")
+    </div>
+</section>

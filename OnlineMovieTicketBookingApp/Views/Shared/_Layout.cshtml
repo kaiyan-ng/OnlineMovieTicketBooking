@@ -12,48 +12,110 @@
 </head>
 <body>
 
-     <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div>
+        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="/Home/Index">
-                    <img src="~/MiscImages/Logo2.jpg" width="30" height="30" class="d-inline-block align-top" />
-                    Scene-nigma
-                </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/Home/Index">
+            <img src="~/MiscImages/Logo2.jpg" width="30" height="30" class="d-inline-block align-top" />
+            Scene-nigma
+        </a>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Movies", "Index", "Movie", null, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cinemas</a>
-                        </li>
-                    </ul>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Movies", "Index", "Movie", null, new { @class = "nav-link" })
+                </li>-->
+        @*<li class="nav-item">
+            @Html.ActionLink("Showtimes", "List", "Shows", null, new { @class = "nav-link" })
+        </li>*@
+        <!--</ul>
 
-                </div>
-                <div>
+            </div>
+            <div>
 
-                    <ul class="navbar-nav navbar-right">
+                <ul class="navbar-nav navbar-right">
+                    <li>
+                        @Html.ActionLink("Login", "Login", "User", null, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Register", "Register", "User", null, new { @class = "nav-link" })
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </nav>
+
+    </div>-->
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/Home/Index">
+                <img src="~/MiscImages/Logo2.jpg" width="30" height="30" class="d-inline-block align-top" />
+                Scene-nigma
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Movies", "Index", "Movie", null, new { @class = "nav-link" })
+                    </li>
+                </ul>
+
+            </div>
+            <div>
+
+                @*<ul class="navbar-nav navbar-right">
+
+                    <li>
+                        @Html.ActionLink("Login", "Login", "User", null, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Register", "Register", "User", null, new { @class = "nav-link" })
+                    </li>
+                </ul>*@
+                <ul class="navbar-nav navbar-right">
+                    @if (TempData.Peek("CustomerName") != null)
+                    {
                         <li>
-                            @Html.ActionLink("Login", "Login", "User", null, new { @class = "nav-link" })
+                            <p style="color:#fff;margin-top:15px;">Hello @TempData.Peek("CustomerName")</p>
                         </li>
                         <li>
-                            @Html.ActionLink("Register", "Register", "User", null, new { @class = "nav-link" })
+                        @Html.ActionLink("Profile", "Index", "User", null, new { @class = "nav-link" })
+                         </li>
+                        <li>
+                            @Html.ActionLink("Logout", "Logout", "User", null, new { @class = "nav-link" }) 
                         </li>
-                    </ul>
+                    }
+                    else
+                    {
+                    <li>
+                        @Html.ActionLink("Login", "Login", "User", null, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Register", "Register", "User", null, new { @class = "nav-link" })
+                    </li>}
+                </ul>
 
+            </div>
 
-                </div>
+        </nav>
 
-            </nav>
-
-        </div>
+    </div>
         <div>
             @RenderBody()
             @section Scripts {

@@ -7,6 +7,7 @@ using OnlineMovieTicketBookingApp.Models;
 using OnlineMovieTicketBookingApp.Services;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,14 +19,14 @@ namespace OnlineMovieTicketBookingApp.Controllers
     {
         private readonly CinemaContext _context;
         private readonly IRepo<Movie, int> _repo;
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IWebRepo<Show, int> _showRepo;
         private readonly ILogger<MovieController> _logger;
 
-        public MovieController(CinemaContext context, IRepo<Movie, int> repo, IWebHostEnvironment webHostEnvironment, ILogger<MovieController> logger)
+        public MovieController(IWebRepo<Show, int> showRepo, CinemaContext context, IRepo<Movie, int> repo, ILogger<MovieController> logger)
         {
             _repo = repo;
             _context = context;
-            _webHostEnvironment = webHostEnvironment;
+            _showRepo = showRepo;
             _logger = logger;
         }
 
@@ -57,29 +58,6 @@ namespace OnlineMovieTicketBookingApp.Controllers
                 if (ModelState.IsValid)
                 {
                     Movie myMovie = movie;
-                    //if (movie.Poster_File != null)
-                    //{
-                    //    try
-                    //    {
-                    //        string folder = "/MoviePosters";
-                    //        folder += Guid.NewGuid().ToString() + myMovie.Poster_File.FileName;
-                    //        string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
-
-                    //        await myMovie.Poster_File.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
-                    //        ViewBag.Message = "File uploaded successfully";
-
-                    //    }
-                    //    catch (Exception ex)
-                    //    {
-                    //        ViewBag.Message = "ERROR:" + ex.Message.ToString();
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    ViewBag.Message = "You have not specified a file.";
-                    //}
-
-
                     movie.Id = _repo.Add(myMovie);
                 return RedirectToAction("List");
 
@@ -111,23 +89,58 @@ namespace OnlineMovieTicketBookingApp.Controllers
             return View(movies);
         }
 
+        //public IActionResult Details(int id)
+        //{
+        //    Movie movie;
+        //    List<Show> showTimes = new List<Show>();
+        //    try
+        //    {
+        //        movie = _repo.Get(id);
+        //    }
+        //    catch (ArgumentNullException)
+        //    {
+        //        movie = null;
+        //    } catch (InvalidOperationException)
+        //    {
+        //        movie = null;
+        //    }
+
+        //    showTimes = _context.Shows.Where(s => s.Movie_Id == id).ToList();
+            
+
+        //    return View(movie);
+        //}
+
         public IActionResult Details(int id)
         {
-            Movie movie;
+            MovieTimeViewModel myModel = new MovieTimeViewModel();
+           
+
             try
             {
-                movie = _repo.Get(id);
-
-            } catch (ArgumentNullException)
-            {
-                movie = null;
-            } catch (InvalidOperationException)
-            {
-                movie = null;
+                myModel.Movie = _repo.Get(id);
+                myModel.Shows = _context.Shows.Where(s => s.Movie_Id == id).ToList();
             }
-            
-            return View(movie);
+            catch (ArgumentNullException)
+            {
+                myModel.Movie = null;
+            }
+            catch (InvalidOperationException)
+            {
+                myModel.Movie = null;
+            }
+
+            if (myModel.Shows.Count() == 0)
+            {
+                ViewBag.Message = "There are no showtimes available.";
+            }
+
+            return View(myModel);
+
         }
+
+
+
 
         public IActionResult Delete(int id)
         {

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<OnlineMovieTicketBookingApp.Models.Ticket>
+
+
+
+@foreach (var item in Model)
+{
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><b>Hall Number @item.hall_number</b></h5>
+            <h6 class="card-text"><i> Seat Number  (@item.seat_number)</i></h6>
+            <p class="card-text">
+                <br />
+                Show Time  @item.show_datetime
+                <br />
+            </p>
+            <a href='@Url.Action("Details", "Ticket" , new { id = item.ticket_id } )'>
+                <input type='button' class="btn btn-warning" value='View Details' />
+            </a>
+        </div>
+    </div>}

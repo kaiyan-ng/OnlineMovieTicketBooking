@@ -56,21 +56,20 @@ namespace OnlineMovieTicketBookingApp.Models
         [Display(Name = "Background Image File Name")]
         public string BgImage { get; set; }
 
-        [NotMapped]
-        [Display(Name = "Upload Poster")]
-        [Required]
-        public IFormFile Poster_File { get; set; }
+        //[NotMapped]
+        //[Display(Name = "Upload Poster")]
+        //[Required]
+        //public IFormFile Poster_File { get; set; }
 
-        [NotMapped]
-        [Display(Name = "Upload Trailer")]
-        [Required]
-        public IFormFile Trailer_File { get; set; }
+        //[NotMapped]
+        //[Display(Name = "Upload Trailer")]
+        //[Required]
+        //public IFormFile Trailer_File { get; set; }
 
-        [NotMapped]
-        [Display(Name = "Upload Background")]
-        [Required]
-        public IFormFile Bg_File { get; set; }
-        public ICollection<Show> Shows { get; set; }
+        //[NotMapped]
+        //[Display(Name = "Upload Background")]
+        //[Required]
+        //public IFormFile Bg_File { get; set; }
 
     }
 }

@@ -1,0 +1,78 @@
+﻿@model OnlineMovieTicketBookingApp.Models.Customer
+
+@{ ViewData["Title"] = "UserProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h3>
+    Profile
+</h3>
+
+<div class="container">
+    
+</div>
+
+<div class="table-responsive-lg">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    First_Name
+                </th>
+                <th>
+                    Last_Name
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Address
+                </th>
+
+                <th>
+                    Date_Of_Birth
+                </th>
+                <th>
+                    Phone
+                </th>
+                <th>
+                    Email
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+<tr>
+
+    <td>
+        @Html.DisplayFor(Model => Model.First_Name)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.Last_Name)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.Gender)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.Address)
+    </td>
+    <td>
+        @Html.DisplayFor(Model => Model.Date_Of_Birth)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Phone)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Email)
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("View Booking Details", "List", "Movie", new { userid = Model.Id }) |
+        @*@Html.ActionLink("Delete", "Delete", new { / id=item.PrimaryKey / })*@
+    </td>
+</tr>
+       }
+        </tbody>
+    </table>
+</div>

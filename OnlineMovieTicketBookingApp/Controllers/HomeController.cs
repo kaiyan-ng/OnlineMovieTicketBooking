@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using OnlineMovieTicketBookingApp.Models;
+using OnlineMovieTicketBookingApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,21 +14,22 @@ namespace OnlineMovieTicketBookingApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IRepo<Movie, int> _repo;
 
-        private readonly CinemaContext _context;
-
-        public HomeController(CinemaContext context, ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IRepo<Movie, int> repo)
         {
-            _context = context;
+            _repo = repo;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var movies = _repo.GetAll();
+            return View(movies);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

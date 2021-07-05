@@ -1,0 +1,126 @@
+﻿2021-07-01 15:43:21,787 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 15:43:21,969 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 15:43:21,978 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:08:12,538 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:08:12,648 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:08:12,652 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:10:20,752 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:10:20,825 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:10:20,829 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:11:13,283 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:11:13,353 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:11:13,356 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:12:18,685 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:12:18,751 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:12:18,754 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:20:47,617 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:20:47,680 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:20:47,683 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:21:02,348 ERROR [8] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'OnlineMovieTicketBookingApp.Models.Movie', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.IEnumerable`1[OnlineMovieTicketBookingApp.Models.Show]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method162(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
+   at AspNetCore.Views_Movie_Details.ExecuteAsync() in C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\Views\Movie\Details.cshtml:line 113
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-01 16:28:26,851 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:28:26,924 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:28:26,927 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:28:31,623 ERROR [7] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type '<>f__AnonymousType6`1[System.Int32]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.IEnumerable`1[OnlineMovieTicketBookingApp.Models.Show]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method162(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
+   at AspNetCore.Views_Movie_Details.ExecuteAsync() in C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp\Views\Movie\Details.cshtml:line 113
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-01 16:28:54,730 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:28:54,800 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:28:54,803 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:31:07,063 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:31:07,131 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:31:07,134 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:34:19,872 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:34:19,964 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:34:19,969 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 16:44:29,595 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 16:44:29,788 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 16:44:29,819 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 22:25:33,416 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 22:25:33,532 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 22:25:33,534 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 22:37:06,565 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 22:37:06,648 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 22:37:06,650 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 22:40:39,809 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 22:40:39,905 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 22:40:39,909 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 22:57:21,033 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 22:57:21,132 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 22:57:21,134 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 23:49:51,191 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 23:49:51,300 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 23:49:51,303 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 23:53:37,163 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 23:53:37,246 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 23:53:37,249 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-01 23:54:40,317 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-01 23:54:40,405 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-01 23:54:40,407 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp

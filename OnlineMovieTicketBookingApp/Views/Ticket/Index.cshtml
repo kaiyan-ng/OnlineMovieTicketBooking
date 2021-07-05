@@ -1,0 +1,88 @@
+﻿@model IEnumerable<OnlineMovieTicketBookingApp.Models.Ticket>
+
+@{ ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+<!DOCTYPE html>
+<style>
+        body {
+            background-color: black;
+        }
+        .card {
+            @*position: relative;*@
+            /*left: 30px;*/
+            top: 20px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+            margin: 5px;
+        }
+        .card-img-top {
+            width: 60%;
+            height: auto;
+            object-fit: cover;
+        }
+        .card-text {
+            font-size: 12px;
+        }
+        .card-title {
+            font-size: 13px;
+        }
+        .card-link {
+            font-size: 12px;
+            color: lightsteelblue;
+        }
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        /*border: 1px solid #ccc;*/
+        border-top: none;
+    }
+    .nav-pills > li > a {
+        color: white !important;
+    }
+    .tab {
+        margin: 5px;
+        left: 10px;
+    }
+    .nav-pills > li > a.active {
+        background-color: white !important;
+        color: black !important;
+    }
+    .nav-pills > li > a:hover {
+        background-color: gray !important;
+        color: white !important;
+    }
+    /*.nav-link-color {
+        color: black !important;
+    }*/
+    .coming-soon{
+        color:black;
+    }
+</style>
+<h1>  Welcome User </h1>
+<script>
+    function displayTickets(evt, status) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(status).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active tabcontent" id="now-showing" role="tabpanel" aria-labelledby="pills-home-tab">@await Html.PartialAsync("_Tickets")</div>
+</div>

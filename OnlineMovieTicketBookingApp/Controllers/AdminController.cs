@@ -11,13 +11,13 @@ namespace OnlineMovieTicketBookingApp.Controllers
 {
     public class AdminController : Controller
     {
-        private readonly CinemaContext _context;
+        private readonly IRepo<int, User> _repo;
         private readonly ILogger<AdminController> _logger;
 
-        public AdminController(CinemaContext context, ILogger<AdminController> logger)
+        public AdminController(ILogger<AdminController> logger, IRepo<int, User> repo)
         {
-            _context = context;
             _logger = logger;
+            _repo = repo;
         }
         public IActionResult Index()
         {
@@ -37,26 +37,17 @@ namespace OnlineMovieTicketBookingApp.Controllers
 
             try
             {
-                var myAdmin = _context.Admins.SingleOrDefault(e => e.Username == user.Username);
-                if (myAdmin != null)
-                { 
-                    var checkPass = user.Password;
-                    for (int i = 0; i < checkPass.Length; i++)
-                    {
-                        if (checkPass[i] != myAdmin.Password[i])
-                        {
-                            ViewBag.Message = "Invalid username or password";
-                            return View();
-                        }
-
-                    }
-                    ViewBag.Message = "Welcome " + myAdmin.First_Name;
-                    return RedirectToAction("Index", "Admin");
-
+                int adminId = _repo.Get(user);
+                if(adminId == -1)
+                {
+                    ViewBag.Message = "Invalid username or password";
+                    return View();
                 }
                 else
-                    ViewBag.Message = "Invalid username or password";
-                return View();
+                {
+                    return RedirectToAction("Index", "Admin");
+                }
+
             }
             catch (Exception)
             {

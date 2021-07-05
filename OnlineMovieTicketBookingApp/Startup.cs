@@ -31,7 +31,9 @@ namespace OnlineMovieTicketBookingApp
         {
             services.AddMvc();
             services.AddScoped<IRepo<Movie, int>, MovieRepo>();
-            services.AddScoped<IRepo<Show, int>, ShowRepo>();
+            services.AddScoped<IWebRepo<Show, int>, ShowRepo>();
+            services.AddScoped<IRepo<int, User>, AdminRepo>();
+            services.AddScoped<IRepo<Customer, int>, UserRepo>();
             services.AddDbContext<CinemaContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:cinemaCon"]));
         }
 
@@ -47,6 +49,8 @@ namespace OnlineMovieTicketBookingApp
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+
             app.UseStaticFiles();
 
             app.UseRouting();
