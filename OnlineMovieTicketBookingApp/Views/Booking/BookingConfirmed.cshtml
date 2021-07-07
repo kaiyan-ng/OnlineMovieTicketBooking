@@ -1,0 +1,84 @@
+﻿
+@{ ViewData["Title"] = "Booking Confirmed";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<style>
+        body {
+            background-color: black;
+            color:white;
+            overflow:hidden;
+        }
+
+
+    /*.step_num {
+        padding: 20px;
+        border: 1px solid #ccc;
+        background: #ccc;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_bg {
+        background: #fff;
+        padding-top: 80px;
+    }
+    .steps, .box-center {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .row-padding {
+        padding-top:10px;
+    }*/
+    .action-link{
+        font-size:13px;
+    }
+</style>
+
+<script>
+
+</script>
+
+@*<div class="container">
+    <div class="section_bg">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-3 text-center">
+                <div class="steps">
+                    <div class="step_num">1</div>
+                </div>
+                Select Tickets
+            </div>
+            <div class="col-lg-6"><hr /></div>
+            <div class="col-lg-3 text-center">
+                <div class="steps">
+                    <div class="step_num">2</div>
+                </div>
+                Confirmation
+            </div>
+        </div>*@
+
+        <div>
+
+            <div class="row" style="padding:100px 0px;">
+                <div class="col-lg-12 text-center">
+                    Your booking has been confirmed.
+                    <br /><br />
+
+                    <br />
+                    @Html.ActionLink("View booking", "ViewBooking", "Booking", new { customerId = 1 }, new { @class = "btn btn-warning" })
+                    <br />
+                    @Html.ActionLink("Return to Home Page", "Index", "Home", null, new { @class = "action-link" })
+                </div>
+            </div>
+
+        </div>
+
+
+    @*</div>
+</div>*@
+
+

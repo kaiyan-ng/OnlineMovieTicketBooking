@@ -113,17 +113,33 @@ namespace OnlineMovieTicketBookingApp.Controllers
             return View();
         }
 
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            return View();
+            Show show;
+            try
+            {
+                show = await _repo.Get(id);
+
+            }
+            catch (ArgumentNullException)
+            {
+                show = null;
+            }
+            catch (InvalidOperationException)
+            {
+                show = null;
+            }
+
+            return View(show);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<ActionResult> Delete(int id, Show show)
         {
             try
             {
+                var show_id = await _repo.Delete(id);
                 return RedirectToAction("Index", "Show");
             }
             catch (Exception)

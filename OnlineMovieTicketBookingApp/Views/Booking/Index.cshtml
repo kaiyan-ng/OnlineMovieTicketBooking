@@ -1,0 +1,199 @@
+﻿@model OnlineMovieTicketBookingApp.Models.BookingViewModel
+
+@{
+    ViewData["Title"] = "Booking Step 1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<style>
+        body {
+            background-color: black;
+            color:white;
+            overflow:hidden;
+        }
+
+        
+    .step_num1 {
+        color:black;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .step_num2 {
+        color: black;
+        padding: 20px;
+        border: 1px solid grey;
+        background: grey;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inactive-page{
+        color:grey;
+    }
+    .section_bg {
+       /* background: #fff;*/
+        padding-top: 50px;
+    }
+    .steps, .box-center {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .row-padding {
+        padding-top:10px;
+    }
+    .heading{/*
+        position: relative;
+        top:30px;*/
+        text-align:center;
+
+    }
+    .selection{
+        position: relative;
+        top:30px;
+        left:120px;
+    }
+    .buttons{
+        position:relative;
+        top:30px;
+        left:225px;
+    }
+    .form-control{
+        width:180px;
+        height:30px;
+    }
+</style>
+
+<script>
+
+</script>
+
+
+<div class="container">
+    <div class="section_bg">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-3 text-center">
+                <div class="steps">
+                    <div class="step_num1"><b>1</b></div>
+                </div>
+                <p><b>Select Tickets</b></p>
+            </div>
+            <div class="col-lg-6"><hr /></div>
+            <div class="col-lg-3 text-center">
+                <div class="steps">
+                    <div class="step_num2">2</div>
+                </div>
+                <p class="inactive-page">Confirmation</p>
+            </div>
+        </div>
+
+        <h4 class="heading">Select Tickets</h4>
+
+        @using (Html.BeginForm("Index", "Booking", new { movieId = @Model.Movie.Id }, FormMethod.Post))
+        {
+            <div class="selection">
+                <div class="row justify-content-center">
+                    <div class="col box-center">
+                        <div style="width: 700px">
+                            <div class="row row-padding">
+                                <div class="col-lg-3">
+                                    Movie:
+                                </div>
+                                <div class="col">
+                                    @Html.Hidden("Customer_Id", @TempData.Peek("CustomerId"))
+                                    @Html.Hidden("Movie_Id", @Model.Movie.Id)
+                                    @Html.Hidden("Total_Price", 0)
+                                    @Model.Movie.Title
+                                </div>
+                            </div>
+                            <div class="row row-padding">
+                                <div class="col-lg-3">
+                                    Hall No.:
+                                </div>
+                                <div class="col">
+                                    1
+                                </div>
+                            </div>
+                            <div class="row row-padding">
+                                <div class="col-lg-3">
+                                    Ticket Price:
+                                </div>
+                                <div class="col">
+                                    $<label id="lblPrice" style="font-weight:bold">@Model.Movie.Ticket_Price.ToString("0.00")</label>
+                                </div>
+                            </div>
+                            <div class="row row-padding">
+                                <div class="col-lg-3">
+                                    Show Date & Time:
+                                </div>
+                                <div class="col">
+                                    @Html.DropDownListFor(model => model.Show_Id, new SelectList(Model.Shows, "Id", "Date_And_Time"))
+                                </div>
+                            </div>
+                            <div class="row row-padding">
+                                <div class="col-lg-3">
+                                    Total tickets
+                                </div>
+                                <div class="col">
+                                    @Html.EditorFor(model => model.Total_Tickets, new { htmlAttributes = new { @class = "form-control"} })
+                                    @Html.ValidationMessageFor(m => m.Total_Tickets, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="row row-padding">
+                                <div class="col-lg-3">
+                                    Total price
+                                </div>
+                                <div class="col">
+                                    <label id="lblTotalPrice" style="font-weight:bold" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="row buttons" style="padding:20px;">
+
+                <div class="col-lg-6 justify-content-start">
+                    @Html.ActionLink("Cancel", "Index", "Home", null, new { @class = "btn btn-outline-danger" })
+                </div>
+                
+                <div class="col-lg-6 justify-content-end">
+                    <button class="btn btn-warning">Next</button>
+                </div>
+                <br /><br />
+            </div>
+        }
+    </div>
+
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#Total_Tickets").on("change", function () {
+            var tickets = $(this).val();
+            var price = $("#lblPrice").text();
+            var total = tickets * price;
+            $("#Total_Price").val(total);
+            $("#lblTotalPrice").text("$" + total);
+        });
+    })
+</script>

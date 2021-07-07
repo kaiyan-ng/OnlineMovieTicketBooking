@@ -1,0 +1,484 @@
+﻿2021-07-05 11:57:43,867 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 11:57:44,018 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 11:57:44,021 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 11:57:44,408 ERROR [4] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Show,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-05 12:00:28,226 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:00:28,402 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:00:28,406 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:00:28,757 ERROR [4] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Show,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-05 12:01:09,647 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:01:09,740 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:01:09,743 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:01:10,088 ERROR [5] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Show,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method2(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-05 12:03:52,040 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:03:52,193 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:03:52,196 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:07:56,078 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:07:56,444 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:07:56,451 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:09:58,675 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:09:58,748 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:09:58,751 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:44:51,819 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:44:51,941 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:44:51,943 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:45:27,981 ERROR [16] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Customer,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method176(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-05 12:46:28,818 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:46:28,915 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:46:28,919 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:49:14,646 INFO [6] OnlineMovieTicketBookingApp.Controllers.UserController.Register - User added
+2021-07-05 12:49:28,482 INFO [16] OnlineMovieTicketBookingApp.Controllers.UserController.Login - Login success
+2021-07-05 12:57:36,461 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:57:36,733 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:57:36,739 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 12:58:19,151 INFO [8] OnlineMovieTicketBookingApp.Controllers.UserController.Login - Login success
+2021-07-05 12:58:59,494 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 12:58:59,690 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 12:58:59,696 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 13:01:17,872 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 13:01:18,030 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 13:01:18,038 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 13:03:31,690 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 13:03:31,780 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 13:03:31,787 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 13:17:06,977 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 13:17:07,063 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 13:17:07,066 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 13:17:37,280 INFO [4] OnlineMovieTicketBookingApp.Services.UserRepo.Edit - Customer details updated
+2021-07-05 13:41:46,693 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 13:41:46,839 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 13:41:46,844 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 13:52:40,711 INFO [15] OnlineMovieTicketBookingApp.Services.MovieRepo.Edit - Movie updated
+2021-07-05 13:52:57,251 INFO [15] OnlineMovieTicketBookingApp.Services.MovieRepo.Edit - Movie updated
+2021-07-05 14:27:50,244 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 14:27:50,555 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 14:27:50,566 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 14:30:05,410 ERROR [6] OnlineMovieTicketBookingApp.Services.ShowRepo+<GetAll>d__7.MoveNext - Unable to retrive pizza from API No connection could be made because the target machine actively refused it. (localhost:34932)
+2021-07-05 14:34:38,061 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 14:34:38,200 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 14:34:38,209 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 14:46:26,608 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 14:46:26,869 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 14:46:26,880 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 14:48:28,774 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-05 14:48:28,874 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-05 14:48:28,878 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\source\repos\OnlineMovieTicketBookingApp\OnlineMovieTicketBookingApp
+2021-07-05 14:48:51,708 ERROR [4] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Ticket,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.TicketController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method153(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-05 14:48:56,373 ERROR [4] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Ticket,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.TicketController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method153(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-05 14:49:00,581 ERROR [4] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.IRepo`2[OnlineMovieTicketBookingApp.Models.Ticket,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.TicketController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method155(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-06 15:10:36,549 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 15:10:36,733 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 15:10:36,740 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 15:42:16,010 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 15:42:16,084 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 15:42:16,087 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 16:30:45,355 INFO [26] OnlineMovieTicketBookingApp.Controllers.UserController.Register - User added
+2021-07-06 16:30:56,818 INFO [25] OnlineMovieTicketBookingApp.Controllers.UserController.Login - Login success
+2021-07-06 17:08:29,956 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 17:08:30,059 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 17:08:30,062 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 17:08:34,169 ERROR [8] ?.? - An exception occurred while iterating over the results of a query for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at lambda_method55(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at lambda_method55(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2021-07-06 17:11:32,902 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 17:11:32,981 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 17:11:32,985 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 17:11:36,221 ERROR [4] ?.? - An exception occurred while iterating over the results of a query for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at lambda_method66(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at lambda_method66(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2021-07-06 17:13:37,162 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 17:13:37,234 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 17:13:37,236 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 17:13:40,539 ERROR [8] ?.? - An exception occurred while iterating over the results of a query for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at lambda_method66(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at lambda_method66(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2021-07-06 18:54:21,653 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 18:54:21,827 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 18:54:21,832 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 18:55:55,105 INFO [17] OnlineMovieTicketBookingApp.Controllers.UserController.Register - User added
+2021-07-06 18:56:02,981 INFO [17] OnlineMovieTicketBookingApp.Controllers.UserController.Login - Login success
+2021-07-06 18:56:48,078 ERROR [18] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.ITicketRepo`2[OnlineMovieTicketBookingApp.Models.Show,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.BookingController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method331(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-06 19:02:01,389 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 19:02:01,507 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 19:02:01,510 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 21:46:14,734 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 21:46:14,865 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 21:46:14,868 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 21:46:45,817 ERROR [7] ?.? - An error occurred using the connection to database 'KaiYanSQLServer' on server 'tcp:kaiyandbserver.database.windows.net,1433'.
+2021-07-06 21:46:45,868 ERROR [7] ?.? - An exception occurred while iterating over the results of a query for context type 'OnlineMovieTicketBookingApp.Models.CinemaContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=593; handshake=1470; [Login] initialization=26; authentication=20; [Post-Login] complete=28355; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:0ec0804f-e863-4bfb-9b5f-3fdaa2c0f6d7
+Error Number:-2,State:0,Class:11
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=593; handshake=1470; [Login] initialization=26; authentication=20; [Post-Login] complete=28355; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:0ec0804f-e863-4bfb-9b5f-3fdaa2c0f6d7
+Error Number:-2,State:0,Class:11
+2021-07-06 21:47:07,862 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 21:47:07,928 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 21:47:07,931 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 21:47:30,320 ERROR [17] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.ITicketRepo`2[OnlineMovieTicketBookingApp.Models.Show,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.BookingController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method160(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-06 21:55:47,631 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 21:55:47,706 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 21:55:47,709 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 21:56:12,103 INFO [4] OnlineMovieTicketBookingApp.Controllers.UserController.Login - Login success
+2021-07-06 21:56:19,969 ERROR [4] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.ITicketRepo`2[OnlineMovieTicketBookingApp.Models.Show,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.BookingController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method270(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-06 21:56:25,186 ERROR [12] ?.? - An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'OnlineMovieTicketBookingApp.Services.ITicketRepo`2[OnlineMovieTicketBookingApp.Models.Show,System.Int32]' while attempting to activate 'OnlineMovieTicketBookingApp.Controllers.BookingController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method270(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-06 22:06:25,946 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:06:26,016 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:06:26,018 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:10:22,685 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:10:22,756 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:10:22,759 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:11:10,428 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:11:10,490 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:11:10,493 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:11:58,519 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:11:58,580 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:11:58,584 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:20:48,256 INFO [26] OnlineMovieTicketBookingApp.Services.BookingRepo.Add - Booking added
+2021-07-06 22:30:14,521 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:30:14,595 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:30:14,597 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:42:09,296 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:42:09,448 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:42:09,454 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:45:44,588 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:45:44,653 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:45:44,656 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:48:51,539 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:48:51,607 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:48:51,609 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:50:31,143 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:50:31,215 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:50:31,218 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:51:12,861 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:51:12,931 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:51:12,933 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:54:13,985 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:54:14,053 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:54:14,056 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 22:59:56,812 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 22:59:56,915 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 22:59:56,918 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:02:47,641 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:02:47,707 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:02:47,710 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:07:46,088 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:07:46,168 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:07:46,171 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:11:14,971 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:11:15,034 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:11:15,037 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:13:48,941 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:13:49,004 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:13:49,007 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:15:17,926 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:15:18,003 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:15:18,006 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:15:54,618 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:15:54,700 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:15:54,703 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:17:29,246 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:17:29,310 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:17:29,313 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:18:36,800 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:18:36,881 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:18:36,884 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:22:10,662 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:22:10,725 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:22:10,728 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:24:26,524 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:24:26,590 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:24:26,592 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:26:55,890 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:26:55,956 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:26:55,959 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:27:51,762 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:27:51,850 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:27:51,853 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:29:42,565 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:29:42,630 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:29:42,633 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:30:50,312 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:30:50,375 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:30:50,377 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:31:40,339 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:31:40,400 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:31:40,402 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:33:08,534 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:33:08,604 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:33:08,606 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:34:42,148 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:34:42,215 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:34:42,217 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:36:02,648 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:36:02,712 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:36:02,715 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:39:20,422 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:39:20,585 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:39:20,591 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:41:56,935 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:41:57,138 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:41:57,144 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:44:26,639 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:44:26,769 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:44:26,773 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:46:44,945 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:46:45,284 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:46:45,293 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:51:18,301 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:51:18,438 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:51:18,442 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:53:00,840 INFO [20] OnlineMovieTicketBookingApp.Services.BookingRepo.Add - Booking added
+2021-07-06 23:57:08,542 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-07-06 23:57:08,673 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Development
+2021-07-06 23:57:08,677 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\Users\kaiya\Source\Repos\TicketBooking\OnlineMovieTicketBookingApp
+2021-07-06 23:57:52,395 INFO [8] OnlineMovieTicketBookingApp.Services.BookingRepo.Add - Booking added

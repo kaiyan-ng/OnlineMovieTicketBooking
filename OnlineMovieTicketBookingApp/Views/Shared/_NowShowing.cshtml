@@ -23,7 +23,15 @@
                 <br />
                 @item.Run_Time minutes
             </p>
-            <button class="btn btn-warning">Buy Tickets</button>
+            @{ var pageName = "Index";
+               var controller = "Booking";
+               if (TempData.Peek("CustomerId") == null)
+               {
+               pageName = "Login";
+               controller = "User";
+               } }
+            @Html.ActionLink("Buy Tickets", pageName, controller, new { movieId = item.Id }, new { @class = "btn btn-warning" })
+            @*<button class="btn btn-warning">Buy Tickets</button>*@
         </div>
     </div>
 

@@ -92,7 +92,7 @@
                     @if (TempData.Peek("CustomerName") != null)
                     {
                         <li>
-                            <p style="color:#fff;margin-top:15px;">Hello @TempData.Peek("CustomerName")</p>
+                            <p style="color:#fff;margin-top:14px;">Welcome @TempData.Peek("CustomerName")</p>
                         </li>
                         <li>
                         @Html.ActionLink("Profile", "Index", "User", null, new { @class = "nav-link" })

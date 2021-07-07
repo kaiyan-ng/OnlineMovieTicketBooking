@@ -75,48 +75,55 @@
                 @Html.ValidationMessageFor(m => m.Poster, "", new { @class = "text-danger" })
                 <br />
                 @*@Html.DisplayNameFor(m => m.Poster_File)
-                <div class="input-group mb-3">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile02">
-                    </div>
-                    <small id="fileHelpInline" class="text-muted">
-                        (Only image files such as .jpg or .png are accepted)
-                    </small>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
                 </div>
-                @Html.ValidationMessageFor(m => m.Poster_File, "", new { @class = "text-danger" })*@
+                <small id="fileHelpInline" class="text-muted">
+                    (Only image files such as .jpg or .png are accepted)
+                </small>
+            </div>
+            @Html.ValidationMessageFor(m => m.Poster_File, "", new { @class = "text-danger" })*@
 
                 @Html.DisplayNameFor(m => m.Trailer)
                 @Html.EditorFor(m => m.Trailer, new { htmlAttributes = new { @class = "form-control", @placeholder = "/MovieTrailers/filename.filetype" } })
                 @Html.ValidationMessageFor(m => m.Trailer, "", new { @class = "text-danger" })
                 <br />
                 @*@Html.DisplayNameFor(m => m.Trailer_File)
-                <div class="input-group mb-3">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile02">
-                    </div>
-                    <small id="fileHelpInline" class="text-muted">
-                        (Only video files such as .mp4 or .ogg are accepted)
-                    </small>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
                 </div>
+                <small id="fileHelpInline" class="text-muted">
+                    (Only video files such as .mp4 or .ogg are accepted)
+                </small>
+            </div>
 
-                @Html.ValidationMessageFor(m => m.Trailer_File, "", new { @class = "text-danger" })*@
+            @Html.ValidationMessageFor(m => m.Trailer_File, "", new { @class = "text-danger" })*@
 
                 @Html.DisplayNameFor(m => m.BgImage)
                 @Html.EditorFor(m => m.BgImage, new { htmlAttributes = new { @class = "form-control", @placeholder = "/MovieBackgrounds/filename.filetype" } })
                 @Html.ValidationMessageFor(m => m.BgImage, "", new { @class = "text-danger" })
                 <br />
+
+                @Html.DisplayNameFor(m => m.Ticket_Price)
+                @Html.EditorFor(m => m.Ticket_Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Ticket_Price, "", new { @class = "text-danger" })
+                <br />
+
+
                 @*@Html.DisplayNameFor(m => m.Bg_File)
-                <div class="input-group mb-3">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile02">
-                        @ViewBag.Message
-                    </div>
-                    <small id="fileHelpInline" class="text-muted">
-                        (Only image files such as .jpg or .png are accepted)
-                    </small>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    @ViewBag.Message
                 </div>
-                @Html.ValidationMessageFor(m => m.Bg_File, "", new { @class = "text-danger" })
-                <br />*@
+                <small id="fileHelpInline" class="text-muted">
+                    (Only image files such as .jpg or .png are accepted)
+                </small>
+            </div>
+            @Html.ValidationMessageFor(m => m.Bg_File, "", new { @class = "text-danger" })
+            <br />*@
 
                 <div class="form-group">
                     <input type="submit" value="Add Movie" class="btn btn-outline-dark" /> |

@@ -60,6 +60,15 @@
             margin-right: auto;
             
         }
+        .button-container{
+            width:100px;
+            margin: 5px;
+            padding:5px;
+            border: 1px solid white;
+            float:left;
+            left:370px;
+            position: relative;
+        }
 </style>
 
 <section class="view-details">
@@ -122,7 +131,7 @@
     <div>
         <br />
         <h4>View Showtimes</h4>
-        <p style="color:darkgray;">Select time slot to book your tickets</p>
+        @*<p style="color:darkgray;">Select time slot to book your tickets</p>*@
         @ViewBag.Message
 
 
@@ -141,18 +150,39 @@
                     @if (item.Date_And_Time.Day != prevDate)
                     {
                         <br />
-                        @item.Date_And_Time.ToLongDateString()
+                        <b> @item.Date_And_Time.ToLongDateString()</b>
                         <br /><br />
+                              <div class="button-container"> @item.Date_And_Time.ToShortTimeString()</div>
+                        @*var pageName = "Index";
+                        var controller = "Booking";
+                        if (TempData.Peek("CustomerId") == null)
+                        {
+                            pageName = "Login";
+                            controller = "User";
+                        }
 
-                        <a href='@Url.Action("Details", "Booking", new { id = item.Id })' style="text-decoration:none;">
+
+                        @Html.ActionLink(@item.Date_And_Time.ToShortTimeString(), pageName, controller, new { movieId = item.Id }, new { @class = "btn btn-warning" })*@
+                        @*<a href='@Url.Action("pageName", "controller", new { id = item.Id })' style="text-decoration:none;">
                             <input type="button" value="@item.Date_And_Time.ToShortTimeString()" class="btn btn-warning" />
-                        </a>
+                        </a>*@
                     }
                     else
                     {
-                        <a href='@Url.Action("Details", "Booking", new { id = item.Id })' style="text-decoration:none;">
+    <div class="button-container"> @item.Date_And_Time.ToShortTimeString()</div>
+                        @*var pageName = "Index";
+                        var controller = "Booking";
+                        if (TempData.Peek("CustomerId") == null)
+                        {
+                            pageName = "Login";
+                            controller = "User";
+                        }
+
+
+                        @Html.ActionLink(@item.Date_And_Time.ToShortTimeString(), pageName, controller, new { movieId = item.Id }, new { @class = "btn btn-warning" })*@
+                        @*<a href='@Url.Action("pageName", "controller", new { id = item.Id })' style="text-decoration:none;">
                             <input type="button" value="@item.Date_And_Time.ToShortTimeString()" class="btn btn-warning" />
-                        </a>
+                        </a>*@
 
                         prevDate = currDate;
                     }
@@ -162,53 +192,68 @@
     </div>
 
         @*<table class="view-showtimes">
-                   @{ int prevDate = 0;
-                       int currDate = 0;
+                       @{ int prevDate = 0;
+                           int currDate = 0;
 
-                       @foreach (var item in Model.Shows)
-                       {
-                           @if (item.Date_And_Time.Date >= DateTime.Now.Date)
+                           @foreach (var item in Model.Shows)
                            {
-
-                               prevDate = currDate;
-                               currDate = item.Date_And_Time.Day;
-
-
-                               @if (item.Date_And_Time.Day != prevDate)
+                               @if (item.Date_And_Time.Date >= DateTime.Now.Date)
                                {
-
-                                   <thead>
-                                       <tr> <th>@item.Date_And_Time.ToLongDateString() </th></tr>
-                                   </thead>
-                                   <tr>
-                                       <td>
-                                           <a href='@Url.Action("Details", "Booking", new { id = item.Id })'>
-                                               <input type="button" value="@item.Date_And_Time.ToShortTimeString()" class="btn btn-outline-secondary" />
-                                           </a>
-                                       </td>
-                                   </tr>
-        }
-                               else
-                               {
-                                   <tr>
-                                       <td>
-                                           <a href='@Url.Action("Details", "Booking", new { id = item.Id })'>
-                                               <input type="button" value="@item.Date_And_Time.ToShortTimeString()" class="btn btn-outline-secondary" />
-                                           </a>
-                                       </td>
-                                   </tr>
 
                                    prevDate = currDate;
+                                   currDate = item.Date_And_Time.Day;
+
+
+                                   @if (item.Date_And_Time.Day != prevDate)
+                                   {
+
+                                       <thead>
+                                           <tr> <th>@item.Date_And_Time.ToLongDateString() </th></tr>
+                                       </thead>
+                                       <tr>
+                                           <td>
+                                               <a href='@Url.Action("Details", "Booking", new { id = item.Id })'>
+                                                   <input type="button" value="@item.Date_And_Time.ToShortTimeString()" class="btn btn-outline-secondary" />
+                                               </a>
+                                           </td>
+                                       </tr>
+            }
+                                   else
+                                   {
+                                       <tr>
+                                           <td>
+                                               <a href='@Url.Action("Details", "Booking", new { id = item.Id })'>
+                                                   <input type="button" value="@item.Date_And_Time.ToShortTimeString()" class="btn btn-outline-secondary" />
+                                               </a>
+                                           </td>
+                                       </tr>
+
+                                       prevDate = currDate;
+                                   }
+
+
                                }
-
-
                            }
                        }
-                   }
 
-               </table>*@
+                   </table>*@
     </div>
-    <br />
-    <button onclick="location.href='@Url.Action("Index", "Movie")'" class="btn btn-outline-info">Return to Movies</button>
     <br /><br /><br />
+                <div>
+                    <button onclick="location.href='@Url.Action("Index", "Movie")'" class="btn btn-outline-info">Return to Movies</button>
+
+                    @if (Model.Shows.Count() != 0) { 
+                        
+                            var pageName = "Index";
+                            var controller = "Booking";
+                            if (TempData.Peek("CustomerId") == null)
+                            {
+                                pageName = "Login";
+                                controller = "User";
+                            }
+                        
+                        @Html.ActionLink("Buy Tickets", pageName, controller, new { movieId = Model.Movie.Id }, new { @class = "btn btn-warning" })
+                    }
+                    <br /><br /><br />
+                </div>
 </section>

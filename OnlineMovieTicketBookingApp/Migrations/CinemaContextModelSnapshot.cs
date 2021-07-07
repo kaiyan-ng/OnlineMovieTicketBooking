@@ -78,6 +78,42 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         });
                 });
 
+            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Booking", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created_Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Customer_Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Movie_Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Show_Id")
+                        .HasColumnType("int");
+
+                    b.Property<float>("Total_Price")
+                        .HasColumnType("real");
+
+                    b.Property<int>("Total_Tickets")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Customer_Id");
+
+                    b.HasIndex("Movie_Id");
+
+                    b.HasIndex("Show_Id");
+
+                    b.ToTable("Bookings");
+                });
+
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Customer", b =>
                 {
                     b.Property<int>("Id")
@@ -220,6 +256,9 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<float>("Ticket_Price")
+                        .HasColumnType("real");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -248,6 +287,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Run_Time = 134,
                             Status = "Now Showing",
                             Synopsis = "A live action prequel feature film that tells the story of a young Cruella de Vil, the villain from 101 Dalmations. Cruella, which is set in 1970s London amidst the punk rock revolution, follows a young grifter named Estella (Emma Stone), a clever and creative girl determined to make a name for herself with her designs. She befriends a pair of young thieves who appreciate her appetite for mischief, and together they are able to build a life for themselves on the London streets. With their help and her creativity and wit, Estella catches the eye of fashion legend Baroness von Hellman (Emma Thompson) through her fiery flair. But their relationship sets in motion a course of events and revelations that will cause Estella to embrace her wicked side and become the raucous, fashionable and revenge-bent Cruella.",
+                            Ticket_Price = 9f,
                             Title = "Disney's Cruella",
                             Trailer = "/MovieTrailers/DisneysCruella.mp4"
                         },
@@ -266,6 +306,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Run_Time = 112,
                             Status = "Now Showing",
                             Synopsis = "The Conjuring: The Devil Made Me Do It reveals a chilling story of terror, murder and unknown evil that shocked even experienced real-life paranormal investigators Ed and Lorraine Warren. One of the most sensational cases from their files, it starts with a fight for the soul of a young boy, then takes them beyond anything they’d ever seen before, to mark the first time in U.S. history that a murder suspect would claim demonic possession as a defense.",
+                            Ticket_Price = 9f,
                             Title = "The Conjuring: The Devil Made Me Do It",
                             Trailer = "/MovieTrailers/TheConjuring3.mp4"
                         },
@@ -284,6 +325,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Run_Time = 100,
                             Status = "Now Showing",
                             Synopsis = "The world’s most lethal odd couple – bodyguard Michael Bryce (Ryan Reynolds) and hitman Darius Kincaid (Samuel L. Jackson) – are back on another life-threatening mission. Still unlicensed and under scrutiny, Bryce is forced into action by Darius’s even more volatile wife, the infamous international con artist Sonia Kincaid (Salma Hayek). As Bryce is driven over the edge by his two most dangerous protectees, the trio get in over their heads in a global plot and soon find that they are all that stand between Europe and total chaos. Joining in the fun and deadly mayhem are Antonio Banderas as a vengeful and powerful madman and Morgan Freeman as… well, you’ll have to see.",
+                            Ticket_Price = 9f,
                             Title = "Hitman's Wife's Bodyguard",
                             Trailer = "/MovieTrailers/HitmansWifesBodyguard.mp4"
                         },
@@ -302,6 +344,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Run_Time = 143,
                             Status = "Now Showing",
                             Synopsis = "Vin Diesel’s Dom Toretto is leading a quiet life off the grid with Letty and his son, little Brian, but they know that danger always lurks just over their peaceful horizon. This time, that threat will force Dom to confront the sins of his past if he’s going to save those he loves most. His crew joins together to stop a world-shattering plot led by the most skilled assassin and high-performance driver they’ve ever encountered: a man who also happens to be Dom’s forsaken brother, Jakob (John Cena).",
+                            Ticket_Price = 9f,
                             Title = "Fast & Furious 9: The Fast Saga",
                             Trailer = "/MovieTrailers/FastFurious9.mp4"
                         },
@@ -320,6 +363,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Run_Time = 134,
                             Status = "Coming Soon",
                             Synopsis = "Scarlett Johansson reprises her role as Natasha/Black Widow in Marvel Studios' action-packed spy thriller Black Widow- the first film in Phase Four of the Marvel Cinematic Universe. Florence Pugh stars as Yelena, David Harbour as Alexei aka The Red Guardian and Rachel Weisz as Melina. Directed by Cate Shortland and produced by Kevin Feige.",
+                            Ticket_Price = 9f,
                             Title = "Marvel Studios' Black Widow",
                             Trailer = "/MovieTrailers/BlackWidow.mp4"
                         },
@@ -338,6 +382,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Run_Time = 127,
                             Status = "Coming Soon",
                             Synopsis = "Based on Disneyland's popular theme park ride in which a small riverboat, equipped with a hilarious tour guide, takes a group of travelers through a jungle filled with dangerous animals and reptiles.",
+                            Ticket_Price = 9f,
                             Title = "Disney's Jungle Cruise",
                             Trailer = "/MovieTrailers/JungleCruise.mp4"
                         },
@@ -356,6 +401,7 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Run_Time = 120,
                             Status = "Coming Soon",
                             Synopsis = "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+                            Ticket_Price = 9f,
                             Title = "The Suicide Squad",
                             Trailer = "/MovieTrailers/TheSuicideSquad.mp4"
                         });
@@ -462,6 +508,356 @@ namespace OnlineMovieTicketBookingApp.Migrations
                             Date_And_Time = new DateTime(2021, 6, 30, 10, 30, 0, 0, DateTimeKind.Unspecified),
                             Hall_Id = 3,
                             Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Date_And_Time = new DateTime(2021, 7, 7, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Date_And_Time = new DateTime(2021, 7, 7, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Date_And_Time = new DateTime(2021, 7, 7, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Date_And_Time = new DateTime(2021, 7, 7, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Date_And_Time = new DateTime(2021, 7, 7, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Date_And_Time = new DateTime(2021, 7, 7, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Date_And_Time = new DateTime(2021, 7, 7, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Date_And_Time = new DateTime(2021, 7, 7, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Date_And_Time = new DateTime(2021, 7, 7, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Date_And_Time = new DateTime(2021, 7, 7, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Date_And_Time = new DateTime(2021, 7, 7, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Date_And_Time = new DateTime(2021, 7, 7, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Date_And_Time = new DateTime(2021, 7, 7, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Date_And_Time = new DateTime(2021, 7, 7, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Date_And_Time = new DateTime(2021, 7, 7, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Date_And_Time = new DateTime(2021, 7, 7, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Date_And_Time = new DateTime(2021, 7, 7, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Date_And_Time = new DateTime(2021, 7, 7, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Date_And_Time = new DateTime(2021, 7, 7, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Date_And_Time = new DateTime(2021, 7, 7, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Date_And_Time = new DateTime(2021, 7, 7, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Date_And_Time = new DateTime(2021, 7, 7, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Date_And_Time = new DateTime(2021, 7, 7, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Date_And_Time = new DateTime(2021, 7, 7, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Date_And_Time = new DateTime(2021, 7, 7, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Date_And_Time = new DateTime(2021, 7, 14, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Date_And_Time = new DateTime(2021, 7, 14, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Date_And_Time = new DateTime(2021, 7, 14, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Date_And_Time = new DateTime(2021, 7, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Date_And_Time = new DateTime(2021, 7, 14, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 1,
+                            Movie_Id = 1
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Date_And_Time = new DateTime(2021, 7, 14, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Date_And_Time = new DateTime(2021, 7, 14, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Date_And_Time = new DateTime(2021, 7, 14, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Date_And_Time = new DateTime(2021, 7, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Date_And_Time = new DateTime(2021, 7, 14, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 3,
+                            Movie_Id = 2
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Date_And_Time = new DateTime(2021, 7, 14, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Date_And_Time = new DateTime(2021, 7, 14, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Date_And_Time = new DateTime(2021, 7, 14, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Date_And_Time = new DateTime(2021, 7, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Date_And_Time = new DateTime(2021, 7, 14, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 2,
+                            Movie_Id = 3
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Date_And_Time = new DateTime(2021, 7, 14, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Date_And_Time = new DateTime(2021, 7, 14, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Date_And_Time = new DateTime(2021, 7, 14, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Date_And_Time = new DateTime(2021, 7, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Date_And_Time = new DateTime(2021, 7, 14, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 4,
+                            Movie_Id = 4
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Date_And_Time = new DateTime(2021, 7, 14, 10, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Date_And_Time = new DateTime(2021, 7, 14, 13, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Date_And_Time = new DateTime(2021, 7, 14, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Date_And_Time = new DateTime(2021, 7, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 5
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Date_And_Time = new DateTime(2021, 7, 14, 20, 30, 0, 0, DateTimeKind.Unspecified),
+                            Hall_Id = 5,
+                            Movie_Id = 5
                         });
                 });
 
@@ -517,6 +913,33 @@ namespace OnlineMovieTicketBookingApp.Migrations
                     b.HasKey("Username");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Booking", b =>
+                {
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("Customer_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("Movie_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Show", "Show")
+                        .WithMany()
+                        .HasForeignKey("Show_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("Show");
                 });
 
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Show", b =>

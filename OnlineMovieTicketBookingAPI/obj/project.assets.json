@@ -6019,11 +6019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingAPI\\OnlineMovieTicketBookingAPI.csproj",
+      "projectUniqueName": "C:\\Users\\kaiya\\source\\repos\\TicketBooking\\OnlineMovieTicketBookingAPI\\OnlineMovieTicketBookingAPI.csproj",
       "projectName": "OnlineMovieTicketBookingAPI",
-      "projectPath": "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingAPI\\OnlineMovieTicketBookingAPI.csproj",
+      "projectPath": "C:\\Users\\kaiya\\source\\repos\\TicketBooking\\OnlineMovieTicketBookingAPI\\OnlineMovieTicketBookingAPI.csproj",
       "packagesPath": "C:\\Users\\kaiya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingAPI\\obj\\",
+      "outputPath": "C:\\Users\\kaiya\\source\\repos\\TicketBooking\\OnlineMovieTicketBookingAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj": {}
+    "C:\\Users\\kaiya\\Source\\Repos\\TicketBooking\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj": {
+    "C:\\Users\\kaiya\\Source\\Repos\\TicketBooking\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj",
+        "projectUniqueName": "C:\\Users\\kaiya\\Source\\Repos\\TicketBooking\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj",
         "projectName": "OnlineMovieTicketBookingApp",
-        "projectPath": "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj",
+        "projectPath": "C:\\Users\\kaiya\\Source\\Repos\\TicketBooking\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp.csproj",
         "packagesPath": "C:\\Users\\kaiya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kaiya\\source\\repos\\OnlineMovieTicketBookingApp\\OnlineMovieTicketBookingApp\\obj\\",
+        "outputPath": "C:\\Users\\kaiya\\Source\\Repos\\TicketBooking\\OnlineMovieTicketBookingApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

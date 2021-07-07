@@ -24,18 +24,20 @@ namespace OnlineMovieTicketBookingApp.Controllers
             _logger = logger;
             _repo = repo;
         }
-        public IActionResult Login()
+        public IActionResult Login(int movieId)
         {
+            ViewBag.MovieId = movieId;
             User user = new User();
             return View(user);
         }
 
         [HttpPost]
         [AllowAnonymous]
-        public IActionResult Login(User user)
+        public IActionResult Login(int movieId, User user)
         {
             try
             {
+                ViewBag.MovieId = movieId;
                 var myCustomer = _context.Customers.SingleOrDefault(e => e.Username == user.Username);
                 if (myCustomer != null)
                 {
@@ -57,6 +59,10 @@ namespace OnlineMovieTicketBookingApp.Controllers
                     TempData.Keep("CustomerName");
                     TempData.Keep("CustomerId");
                     _logger.LogInformation("Login success");
+
+                    if (movieId != 0)
+                        return RedirectToAction("Index", "Booking", new { movieId = movieId });
+
                     return RedirectToAction("Index", "User");
 
                 }
@@ -145,10 +151,12 @@ namespace OnlineMovieTicketBookingApp.Controllers
             catch (ArgumentNullException ane)
             {
                 myCustomer = null;
+                _logger.LogError("The argument is null " + ane.Message);
             }
             catch (InvalidOperationException ioe)
             {
                 myCustomer = null;
+                _logger.LogError("Could not edit customer details " + ioe.Message);
             }
             return View(myCustomer);
 
@@ -203,93 +211,93 @@ namespace OnlineMovieTicketBookingApp.Controllers
 
 
 
-    //private readonly CinemaContext _context;
-    //    private readonly ILogger<UserController> _logger;
+        //private readonly CinemaContext _context;
+        //    private readonly ILogger<UserController> _logger;
 
 
-    //    public UserController(CinemaContext context, ILogger<UserController> logger)
-    //    {
-    //        _context = context;
-    //        _logger = logger;
-    //    }
-    //    public IActionResult Login()
-    //    {
-    //        User user = new User();
-    //        return View(user);
-    //    }
+        //    public UserController(CinemaContext context, ILogger<UserController> logger)
+        //    {
+        //        _context = context;
+        //        _logger = logger;
+        //    }
+        //    public IActionResult Login()
+        //    {
+        //        User user = new User();
+        //        return View(user);
+        //    }
 
-    //    [HttpPost]
-    //    [AllowAnonymous]
-    //    public IActionResult Login(User user)
-    //    {
-    //        try
-    //        {
-    //            var myCustomer = _context.Customers.SingleOrDefault(e => e.Username == user.Username);
-    //            if (myCustomer != null)
-    //            {
-    //                using var hmac = new HMACSHA512(myCustomer.PasswordSalt);
-    //                var checkPass = hmac.ComputeHash(Encoding.UTF8.GetBytes(user.Password));
-    //                for (int i = 0; i < checkPass.Length; i++)
-    //                {
-    //                    if (checkPass[i] != myCustomer.Password[i])
-    //                    {
-    //                        ViewBag.Message = "Invalid username or password";
-    //                        return View();
-    //                    }
+        //    [HttpPost]
+        //    [AllowAnonymous]
+        //    public IActionResult Login(User user)
+        //    {
+        //        try
+        //        {
+        //            var myCustomer = _context.Customers.SingleOrDefault(e => e.Username == user.Username);
+        //            if (myCustomer != null)
+        //            {
+        //                using var hmac = new HMACSHA512(myCustomer.PasswordSalt);
+        //                var checkPass = hmac.ComputeHash(Encoding.UTF8.GetBytes(user.Password));
+        //                for (int i = 0; i < checkPass.Length; i++)
+        //                {
+        //                    if (checkPass[i] != myCustomer.Password[i])
+        //                    {
+        //                        ViewBag.Message = "Invalid username or password";
+        //                        return View();
+        //                    }
 
-    //                }
-    //                ViewBag.Message = "Welcome " + myCustomer.First_Name;
-    //                return RedirectToAction("Index", "Home");
+        //                }
+        //                ViewBag.Message = "Welcome " + myCustomer.First_Name;
+        //                return RedirectToAction("Index", "Home");
 
-    //            }
-    //            else
-    //                ViewBag.Message = "Invalid username or password";
-    //            return View();
-    //        }
-    //        catch (Exception)
-    //        {
-    //            _logger.LogDebug("Login failed " + user);
-    //        }
-    //        return View();
-    //    }
+        //            }
+        //            else
+        //                ViewBag.Message = "Invalid username or password";
+        //            return View();
+        //        }
+        //        catch (Exception)
+        //        {
+        //            _logger.LogDebug("Login failed " + user);
+        //        }
+        //        return View();
+        //    }
 
-    //    public IActionResult Register()
-    //    {
-    //        CustomerViewModel customerViewModel = new CustomerViewModel();
-    //        return View(customerViewModel);
-    //    }
+        //    public IActionResult Register()
+        //    {
+        //        CustomerViewModel customerViewModel = new CustomerViewModel();
+        //        return View(customerViewModel);
+        //    }
 
-    //    [HttpPost]
-    //    [AllowAnonymous]
-    //    public IActionResult Register(CustomerViewModel customer)
-    //    {
-    //        if (ModelState.IsValid)
-    //        {
-    //            if (customer.Date_Of_Birth.Year <= 2009 && customer.Date_Of_Birth.Year > 1920)
-    //            {
+        //    [HttpPost]
+        //    [AllowAnonymous]
+        //    public IActionResult Register(CustomerViewModel customer)
+        //    {
+        //        if (ModelState.IsValid)
+        //        {
+        //            if (customer.Date_Of_Birth.Year <= 2009 && customer.Date_Of_Birth.Year > 1920)
+        //            {
 
-    //                Customer myCustomer = customer;
-    //                using var hmac = new HMACSHA512();
-    //                myCustomer.Password = hmac.ComputeHash(Encoding.UTF8.GetBytes(customer.UserPassword));
-    //                myCustomer.PasswordSalt = hmac.Key;
-    //                _context.Customers.Add(myCustomer);
-    //                _context.SaveChanges();
-    //                _logger.LogInformation("User added", myCustomer);
-    //                TempData["CustomerId"] = customer.Id;
-    //                return RedirectToAction("Login");
-    //            }
+        //                Customer myCustomer = customer;
+        //                using var hmac = new HMACSHA512();
+        //                myCustomer.Password = hmac.ComputeHash(Encoding.UTF8.GetBytes(customer.UserPassword));
+        //                myCustomer.PasswordSalt = hmac.Key;
+        //                _context.Customers.Add(myCustomer);
+        //                _context.SaveChanges();
+        //                _logger.LogInformation("User added", myCustomer);
+        //                TempData["CustomerId"] = customer.Id;
+        //                return RedirectToAction("Login");
+        //            }
 
-    //            else
-    //            {
-    //                ViewBag.Message = "You are not eligible to sign up at this time.";
-    //                return View();
-    //            }
-    //        }
+        //            else
+        //            {
+        //                ViewBag.Message = "You are not eligible to sign up at this time.";
+        //                return View();
+        //            }
+        //        }
 
-    //        CustomerViewModel customerViewModel = new CustomerViewModel();
-    //        return View(customerViewModel);
+        //        CustomerViewModel customerViewModel = new CustomerViewModel();
+        //        return View(customerViewModel);
 
-    //    }
+        //    }
 
 
 

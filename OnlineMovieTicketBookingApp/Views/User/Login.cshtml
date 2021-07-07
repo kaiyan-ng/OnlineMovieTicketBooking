@@ -69,6 +69,9 @@
         Layout = "~/Views/Shared/_Layout.cshtml"; }
 
     <style>
+        body{
+            overflow:hidden;
+        }
         .heading {
             text-align: center;
             padding-top: 80px;
@@ -103,7 +106,7 @@
                     <h4>Login</h4>
                 </div>
 
-                @using (Html.BeginForm("Login", "User", FormMethod.Post))
+                @using (Html.BeginForm("Login", "User", new { movieId = ViewBag.MovieId },FormMethod.Post))
                 {
     <div>
         @Html.LabelFor(m => m.Username)

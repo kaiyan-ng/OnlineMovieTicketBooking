@@ -2,77 +2,53 @@
 
 @{ ViewData["Title"] = "UserProfile";
     Layout = "~/Views/Shared/_Layout.cshtml"; }
-
-<h3>
-    Profile
-</h3>
-
-<div class="container">
-    
-</div>
-
-<div class="table-responsive-lg">
-    <table class="table">
-        <thead class="thead-light">
-            <tr>
-                <th>
-                    First_Name
-                </th>
-                <th>
-                    Last_Name
-                </th>
-                <th>
-                    Gender
-                </th>
-                <th>
-                    Address
-                </th>
-
-                <th>
-                    Date_Of_Birth
-                </th>
-                <th>
-                    Phone
-                </th>
-                <th>
-                    Email
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null)
-            {
-<tr>
-
-    <td>
-        @Html.DisplayFor(Model => Model.First_Name)
-    </td>
-    <td>
-        @Html.DisplayFor(Model => Model.Last_Name)
-    </td>
-    <td>
-        @Html.DisplayFor(Model => Model.Gender)
-    </td>
-    <td>
-        @Html.DisplayFor(Model => Model.Address)
-    </td>
-    <td>
-        @Html.DisplayFor(Model => Model.Date_Of_Birth)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => Model.Phone)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => Model.Email)
-    </td>
-
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-        @Html.ActionLink("View Booking Details", "List", "Movie", new { userid = Model.Id }) |
-        @*@Html.ActionLink("Delete", "Delete", new { / id=item.PrimaryKey / })*@
-    </td>
-</tr>
-       }
-        </tbody>
+<style>
+    .container1{
+        width:1000px;
+        position: relative;
+        float: left;
+        left:100px;
+        margin:5px;
+        top:50px;
+    }
+</style>
+<div class="container1">
+        <h3>My Profile</h3>   @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+    <br /><br />
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td> @Html.DisplayFor(Model => Model.First_Name) </td>
+        </tr>
+        <tr>
+            <th> Last Name </th>
+            <td> @Html.DisplayFor(Model => Model.Last_Name)</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td> @Html.DisplayFor(Model => Model.Gender)</td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td>@Model.Date_Of_Birth.ToShortDateString()</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>@Html.DisplayFor(Model => Model.Address)</td>
+        </tr>
+        <tr>
+            <th>Phone no.</th>
+            <td>@Html.DisplayFor(modelItem => Model.Phone)</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>@Html.DisplayFor(modelItem => Model.Email)</td>
+        </tr>
     </table>
+    <br /><br />
+    <h3> View Bookings</h3>
+    <div>
+        @Html.ActionLink("View Booking Details", "ViewBooking", "Booking", new { customerId = Model.Id })
+    </div>
+    <br /><br />
 </div>

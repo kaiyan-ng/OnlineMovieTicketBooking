@@ -56,6 +56,10 @@ namespace OnlineMovieTicketBookingApp.Models
         [Display(Name = "Background Image File Name")]
         public string BgImage { get; set; }
 
+        [Display(Name = "Ticket Price")]
+        [Required(ErrorMessage = "This field is required.")]
+        public float Ticket_Price { get; set; }
+
         //[NotMapped]
         //[Display(Name = "Upload Poster")]
         //[Required]

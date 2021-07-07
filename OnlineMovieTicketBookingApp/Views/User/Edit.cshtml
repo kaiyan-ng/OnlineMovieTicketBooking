@@ -10,17 +10,18 @@
         position: relative;
         top: 50px;
     }
-   .container{
-       position:relative;
-       top:50px;
-   }
+
+    .container {
+        position: relative;
+        top: 50px;
+    }
 </style>
 
 @if (ViewBag.Message != null)
 {
-<div>
-    <p class="alert alert-primary">@ViewBag.Message</p>
-</div>}
+    <div>
+        <p class="alert alert-primary">@ViewBag.Message</p>
+    </div>}
 
 <div class="heading">
     <h4> Edit Profile</h4>
@@ -32,25 +33,25 @@
         <div class="col-md-4">
             @using (Html.BeginForm("Edit", "User", FormMethod.Post))
             {
-@Html.LabelFor(m => m.First_Name)
+                @Html.LabelFor(m => m.First_Name)
                 @Html.EditorFor(m => m.First_Name, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.LabelFor(m => m.Last_Name)
-                                                @Html.EditorFor(m => m.Last_Name, new { htmlAttributes = new { @class = "form-control" } })
-                                                                @Html.LabelFor(m => m.Gender)
-                                                                                @Html.EditorFor(m => m.Gender, new { htmlAttributes = new { @class = "form-control" } })
-                                                                                                <label for="inputAddress">Address</label>
-                                                                                                                @Html.TextAreaFor(model => model.Address, new { @class = "form-control", @cols = 80, @rows = 5 })
-                                                                                                                                <label for="inputDOB">Date of Birth</label>
-                                                                                                                                <input asp-for="Date_Of_Birth" class="form-control" type="date"/>
-                                                                                                                                                                <br />
-                                                                                                                                                                                @Html.LabelFor(m => m.Phone)
-                                                                                                                                                                                                @Html.EditorFor(m => m.Phone, new { htmlAttributes = new { @class = "form-control" } })
-                                                                                                                                                                                                                @Html.LabelFor(m => m.Email)
-                                                                                                                                                                                                                                @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control" } }) @*@Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "form-control" })
-                                                                                                                                                                                                                                    @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })*@
-                                                                                                                                                                                                                                                <br />
+                @Html.LabelFor(m => m.Last_Name)
+                @Html.EditorFor(m => m.Last_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(m => m.Gender)
+                @Html.EditorFor(m => m.Gender, new { htmlAttributes = new { @class = "form-control" } })
+                <label for="inputAddress">Address</label>
+                @Html.TextAreaFor(model => model.Address, new { @class = "form-control", @cols = 80, @rows = 5 })
+                <label for="inputDOB">Date of Birth</label>
+                <input asp-for="Date_Of_Birth" class="form-control" type="date" />
+                <br />
+                @Html.LabelFor(m => m.Phone)
+                @Html.EditorFor(m => m.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.LabelFor(m => m.Email)
+                @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control" } }) @*@Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "form-control" })
+                    @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })*@
+                <br />
 
-                                                                                                                                                                                                                                                                <button class="btn btn-secondary">Update Customer</button>} 
+                <button class="btn btn-secondary">Update Profile</button>}
 
             <div>
                 <a asp-controller="User" asp-action="Index">Back to List</a>

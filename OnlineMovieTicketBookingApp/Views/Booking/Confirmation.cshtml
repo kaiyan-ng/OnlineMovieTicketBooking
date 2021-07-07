@@ -1,0 +1,177 @@
+﻿
+@model OnlineMovieTicketBookingApp.Models.BookingViewModel
+
+@{ ViewData["Title"] = "Booking Confirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+        overflow:hidden;
+    }
+
+    .step_num1 {
+        color:black;
+        padding: 20px;
+        border: 1px solid grey;
+        background: grey;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .step_num2 {
+        color:black;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_bg {
+        /*background: #fff;*/
+        padding-top: 50px;
+    }
+    .steps, .box-center {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .row-padding {
+        padding-top:10px;
+    }
+    .heading { /*
+        position: relative;
+        top:30px;*/
+        text-align: center;
+    }
+
+    .confirm {
+        position: relative;
+        top: 30px;
+        left: 120px;
+    }
+
+    .buttons {
+        position: relative;
+        top: 30px;
+        left: 400px;
+        
+    }
+    .btn-outline-danger {
+        width:80px;
+    }
+
+    .btn-warning{
+        width:250px;
+    }
+    .inactive-page{
+        color:grey;
+    }
+</style>
+
+<script>
+
+</script>
+
+<div class="container">
+    <div class="section_bg">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-3 text-center">
+                <div class="steps">
+                    <div class="step_num1">1</div>
+                </div>
+                <p class="inactive-page">Select Tickets</p>
+            </div>
+            <div class="col-lg-6"><hr /></div>
+            <div class="col-lg-3 text-center">
+                <div class="steps">
+                    <div class="step_num2"><b>2</b></div>
+                </div>
+                <b>Confirmation</b>
+            </div>
+        </div>
+
+        <div>
+
+            <h4 class="heading">Confirmation</h4>
+
+            <div class="row justify-content-center confirm">
+                <div class="col box-center">
+                    <div style="width: 700px">
+                        <div class="row row-padding">
+                            <div class="col-lg-3">
+                                Movie:
+                            </div>
+                            <div class="col">
+                                @Model.Movie.Title
+                            </div>
+                        </div>
+                        <div class="row row-padding">
+                            <div class="col-lg-3">
+                                Hall:
+                            </div>
+                            <div class="col">
+                                1
+                            </div>
+                        </div>
+                        <div class="row row-padding">
+                            <div class="col-lg-3">
+                                Show Date & Time:
+                            </div>
+                            <div class="col">
+                                @Model.Show.Date_And_Time
+                            </div>
+                        </div>
+                        <div class="row row-padding">
+                            <div class="col-lg-3">
+                                Total tickets
+                            </div>
+                            <div class="col">
+                                @Model.Total_Tickets
+                            </div>
+                        </div>
+                        <div class="row row-padding">
+                            <div class="col-lg-3">
+                                Total price
+                            </div>
+                            <div class="col">
+                                $@Model.Total_Price
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="row buttons" style="padding:20px;">
+            <br />
+            @using (Html.BeginForm("Confirmation", "Booking", FormMethod.Post))
+            {
+                @Html.ActionLink("Cancel", "Index", "Home", null, new { @class = "btn btn-outline-danger" })
+                <button class="btn btn-warning">Confirm & Make Payment</button>
+
+            }
+            <br /><br />
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+</script>
