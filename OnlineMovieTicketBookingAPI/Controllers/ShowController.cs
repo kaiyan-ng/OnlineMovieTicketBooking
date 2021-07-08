@@ -60,7 +60,9 @@ namespace OnlineMovieTicketBookingAPI.Controllers
             {
                 int id = _repo.Add(show);
                 if (id != -1)
+                {
                     return Ok(show);
+                }
             }
             catch (Exception e)
             {

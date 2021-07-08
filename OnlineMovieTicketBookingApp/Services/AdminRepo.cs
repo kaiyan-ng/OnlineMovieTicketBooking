@@ -44,9 +44,11 @@ namespace OnlineMovieTicketBookingApp.Services
                     {
                         if (checkPass[i] != myAdmin.Password[i])
                         {
-                            return myAdmin.Id;
+                            return -1;
                         }
+                        
                     }
+                    return myAdmin.Id;
                 }
 
                 return -1;

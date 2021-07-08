@@ -69,6 +69,11 @@
             left:370px;
             position: relative;
         }
+        .showtime-date{
+           position:absolute;
+           left: 550px;
+           float:left;
+        }
 </style>
 
 <section class="view-details">
@@ -149,10 +154,10 @@
 
                     @if (item.Date_And_Time.Day != prevDate)
                     {
+                        <br /><br /><br />
+                        <p class="showtime-date"><b> @item.Date_And_Time.ToLongDateString()</b></p>
                         <br />
-                        <b> @item.Date_And_Time.ToLongDateString()</b>
-                        <br /><br />
-                              <div class="button-container"> @item.Date_And_Time.ToShortTimeString()</div>
+                        <div class="button-container"> @item.Date_And_Time.ToShortTimeString()</div>
                         @*var pageName = "Index";
                         var controller = "Booking";
                         if (TempData.Peek("CustomerId") == null)
@@ -169,7 +174,7 @@
                     }
                     else
                     {
-    <div class="button-container"> @item.Date_And_Time.ToShortTimeString()</div>
+                        <div class="button-container"> @item.Date_And_Time.ToShortTimeString()</div>
                         @*var pageName = "Index";
                         var controller = "Booking";
                         if (TempData.Peek("CustomerId") == null)
@@ -187,6 +192,7 @@
                         prevDate = currDate;
                     }
                 }
+
             }
         }
     </div>

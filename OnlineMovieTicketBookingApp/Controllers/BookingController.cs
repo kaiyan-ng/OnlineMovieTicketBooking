@@ -112,6 +112,8 @@ namespace OnlineMovieTicketBookingApp.Controllers
                 booking.Total_Tickets = bookingView.Total_Tickets;
                 booking.Total_Price = bookingView.Total_Price;
                 _repo.Add(booking);
+                TempData.Remove("Booking_id");
+                TempData.Add("Booking_id", booking.Id);
 
                 return RedirectToAction("BookingConfirmed");
 

@@ -56,5 +56,6 @@ namespace OnlineMovieTicketBookingAPI.Models
         [Display(Name = "Background Image File Name")]
         public string BgImage { get; set; }
 
+        public float Ticket_Price { get; set; }
     }
 }

@@ -50,7 +50,9 @@ namespace OnlineMovieTicketBookingApp.Services
         {
             try
             {
-                _context.Remove(_context.Shows.Single(a => a.Id == k));
+                //_context.Remove(_context.Shows.Single(a => a.Id == k));
+                var movie = Get(k);
+                _context.Shows.Remove(movie);
                 _context.SaveChanges();
                 _logger.LogInformation("Showtime deleted", k);
                 return true;
